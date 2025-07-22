@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Logo from "@/public/Logo-2.png"
+import Logo from "@/assets/Logo-2.png"
 
 export const metadata: Metadata = {
   title: 'Rangkai Web',

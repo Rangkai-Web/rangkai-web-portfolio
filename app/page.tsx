@@ -20,11 +20,11 @@ import {
   Zap,
 } from "lucide-react"
 import Image from "next/image"
-import Logo from "@/public/Logo-2.png"
-import Draw2 from "@/public/Draw2.png"
-import GayaKitaStore from "@/public/GayaKitaStore.png"
-import SmartClean from "@/public/SmartClean.png"
-import SMKDigitalNusantara from "@/public/SMKDigitalNusantara.png"
+import Logo from "@/assets/Logo-2.png"
+import Draw2 from "@/assets/draw2.png"
+import GayaKitaStore from "@/assets/GayaKitaStore.png"
+import SmartClean from "@/assets/SmartClean.png"
+import SMKDigitalNusantara from "@/assets/SMKDigitalNusantara.png"
 
 export default function RangkaiWebPortfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
