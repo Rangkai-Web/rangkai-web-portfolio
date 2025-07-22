@@ -315,7 +315,7 @@ export default function RangkaiWebPortfolio() {
             </div>
 
             <div className="relative">
-              <div className="relative z-10">
+              <div className="relative z-10 float-end">
                 <Image
                   src={Draw2}
                   alt="Website Development"
