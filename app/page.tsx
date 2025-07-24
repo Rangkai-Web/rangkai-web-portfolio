@@ -18,6 +18,7 @@ import {
   Users,
   Award,
   Zap,
+  Settings,
 } from "lucide-react"
 import Image from "next/image"
 import Logo from "@/assets/Logo-2.png"
@@ -90,15 +91,13 @@ export default function RangkaiWebPortfolio() {
   const packages = [
     {
       name: "Starter",
-      price: "Rp399.000",
-      description: "Cocok untuk kamu yang ingin mulai tampil online secara hemat namun tetap profesional",
+      price: "Mulai dari Rp399.000",
+      description: "Paket hemat untuk personal atau bisnis yang ingin mulai tampil online secara profesional dengan biaya terjangkau.",
       features: [
         "1 Halaman (Landing Page sederhana)",
         "Desain mobile-friendly",
         "Konten dasar (tentang, produk/jasa, kontak)",
         "Integrasi WhatsApp",
-        // "Gratis domain .my.id (1 tahun)",
-        // "Hosting 500MB (1 tahun)",
         "Estimasi jadi: 3-5 hari kerja",
       ],
       popular: false,
@@ -106,25 +105,23 @@ export default function RangkaiWebPortfolio() {
     },
     {
       name: "Bisnis",
-      price: "Rp899.000",
-      description: "Direkomendasikan untuk UMKM dan bisnis skala kecil-menengah yang ingin tampil lebih kredibel",
+      price: "Mulai dari Rp899.000",
+      description: "Paling populer! Cocok untuk UMKM dan bisnis yang ingin tampil lebih kredibel dan lengkap di dunia digital.",
       features: [
         "3-5 Halaman (Home, Produk/Jasa, Tentang Kami, Kontak, dsb.)",
         "Desain custom & mobile responsive",
         "Galeri foto atau katalog produk",
         "Integrasi WhatsApp & Maps",
-        // "Gratis domain .com (1 tahun)",
-        // "Hosting 1GB (1 tahun)",
         "SEO dasar (judul, deskripsi, struktur heading)",
         "Estimasi jadi: 5-7 hari kerja",
       ],
       popular: true,
-      color: "from-purple-500 to-purple-600",
+      color: "from-orange-500 to-orange-600",
     },
     {
       name: "Profesional",
-      price: "Rp1.499.000",
-      description: "Paket lengkap untuk bisnis yang ingin tampil profesional & optimal di pencarian Google",
+      price: "Mulai dari Rp1.499.000",
+      description: "Paket lengkap untuk bisnis yang ingin tampil profesional, optimal di pencarian Google, dan mudah update konten sendiri.",
       features: [
         "5+ Halaman (Home, Layanan, Portofolio, Artikel, Kontak, dsb.)",
         "Desain premium & fast loading",
@@ -132,12 +129,23 @@ export default function RangkaiWebPortfolio() {
         "SEO on-page + struktur blog",
         "Integrasi WhatsApp, Google Maps, Google Analytics",
         "Formulir kontak / permintaan penawaran",
-        // "Gratis domain .com (1 tahun)",
-        // "Hosting 2GB (1 tahun)",
         "Estimasi jadi: 7-10 hari kerja",
       ],
       popular: false,
       color: "from-emerald-500 to-emerald-600",
+    },
+    {
+      name: "Custom",
+      price: "Hubungi Kami",
+      description: "Solusi website sesuai kebutuhan unik bisnis Anda. Konsultasikan fitur, desain, dan integrasi khusus langsung dengan tim kami.",
+      features: [
+        "Desain & fitur sesuai permintaan",
+        "Integrasi sistem pihak ketiga (API, pembayaran, dsb.)",
+        "Konsultasi & support prioritas",
+        "Estimasi waktu & harga fleksibel",
+      ],
+      popular: false,
+      color: "from-gray-700 to-gray-900",
     },
   ]
 
@@ -344,7 +352,7 @@ export default function RangkaiWebPortfolio() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-4 gap-8">
             {packages.map((pkg, index) => (
               <Card
                 key={index}
@@ -365,6 +373,7 @@ export default function RangkaiWebPortfolio() {
                     {index === 0 && <Zap className="w-6 h-6 text-white" />}
                     {index === 1 && <Award className="w-6 h-6 text-white" />}
                     {index === 2 && <Users className="w-6 h-6 text-white" />}
+                    {index === 3 && <Settings className="w-6 h-6 text-white" />}
                   </div>
                   <CardTitle className="text-2xl">{pkg.name}</CardTitle>
                   <div className="text-3xl font-bold text-gray-900">{pkg.price}</div>
