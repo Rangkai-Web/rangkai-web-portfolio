@@ -77,7 +77,7 @@ export default function RangkaiWebPortfolio() {
 
   const handleContactSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    const waNumber = "6285727346620"
+    const waNumber = "62882005225421"
     const text =
       `Halo, saya ingin konsultasi website.\n` +
       `Nama: ${contactForm.name}\n` +
@@ -299,7 +299,7 @@ export default function RangkaiWebPortfolio() {
                 <Button
                   size="lg"
                   variant="outline"
-                  onClick={() => window.open("https://wa.me/6285727346620", "_blank")}
+                  onClick={() => window.open("https://wa.me/62882005225421", "_blank")}
                 >
                   <MessageCircle className="mr-2 w-4 h-4" />
                   Konsultasi Gratis
@@ -393,7 +393,7 @@ export default function RangkaiWebPortfolio() {
                   <Button
                     className={`w-full mt-6 bg-gradient-to-r ${pkg.color} hover:opacity-90`}
                     onClick={() => {
-                      const waNumber = "6285727346620"
+                      const waNumber = "62882005225421"
                       const text =
                         `Halo, saya tertarik dengan paket website berikut:\n` +
                         `Paket: ${pkg.name}\n` +
@@ -549,7 +549,7 @@ export default function RangkaiWebPortfolio() {
                 <Button
                   size="lg"
                   className="bg-green-600 hover:bg-green-700"
-                  onClick={() => window.open("https://wa.me/6285727346620", "_blank")}
+                  onClick={() => window.open("https://wa.me/62882005225421", "_blank")}
                 >
                   <MessageCircle className="mr-2 w-4 h-4" />
                   Chat WhatsApp
