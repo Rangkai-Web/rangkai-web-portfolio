@@ -529,7 +529,7 @@ export default function RangkaiWebPortfolio() {
                     </div>
                     <div>
                       <div className="font-medium">WhatsApp</div>
-                      <div className="text-blue-100">+62 857 2734 6620</div>
+                      <div className="text-blue-100">+62 8820 0522 5421</div>
                     </div>
                   </div>
 
@@ -654,7 +654,7 @@ export default function RangkaiWebPortfolio() {
               <h4 className="font-bold mb-4">Kontak</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>rangkaiweb@gmail.com</li>
-                <li>+62 857 2734 6620</li>
+                <li>+62 8820 0522 5421</li>
                 <li>@rangkaiweb</li>
               </ul>
             </div>
