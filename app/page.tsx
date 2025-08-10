@@ -94,46 +94,48 @@ export default function RangkaiWebPortfolio() {
 
   const packages = [
     {
-      name: "Starter",
+      name: "Landing Page",
       price: "Mulai dari Rp399.000",
       description: "Paket hemat untuk personal atau bisnis yang ingin mulai tampil online secara profesional dengan biaya terjangkau.",
       features: [
-        "1 Halaman (Landing Page sederhana)",
-        "Desain mobile-friendly",
+        "1 Halaman (Landing Page)",
+        "Desain responsif",
         "Konten dasar (tentang, produk/jasa, kontak)",
         "Integrasi WhatsApp",
-        "Estimasi jadi: 3-5 hari kerja",
+        "Estimasi: 3-5 hari kerja",
+        "Free Konsultasi",
       ],
       popular: false,
       color: "from-blue-500 to-blue-600",
     },
     {
-      name: "Bisnis",
+      name: "Company Profile",
       price: "Mulai dari Rp899.000",
       description: "Paling populer! Cocok untuk UMKM dan bisnis yang ingin tampil lebih kredibel dan lengkap di dunia digital.",
       features: [
-        "3-5 Halaman (Home, Produk/Jasa, Tentang Kami, Kontak, dsb.)",
-        "Desain custom & mobile responsive",
+        "3-5 Halaman",
+        "Desain custom & responsif",
         "Galeri foto atau katalog produk",
         "Integrasi WhatsApp & Maps",
-        "SEO dasar (judul, deskripsi, struktur heading)",
-        "Estimasi jadi: 5-7 hari kerja",
+        "SEO",
+        "Estimasi: 5-7 hari kerja",
+        "Free Konsultasi",
       ],
       popular: true,
       color: "from-orange-500 to-orange-600",
     },
     {
-      name: "Profesional",
+      name: "Online Shop",
       price: "Mulai dari Rp1.499.000",
       description: "Paket lengkap untuk bisnis yang ingin tampil profesional, optimal di pencarian Google, dan mudah update konten sendiri.",
       features: [
-        "5+ Halaman (Home, Layanan, Portofolio, Artikel, Kontak, dsb.)",
+        "5+ Halaman",
         "Desain premium & fast loading",
-        "CMS admin panel (ubah konten sendiri)",
-        "SEO on-page + struktur blog",
-        "Integrasi WhatsApp, Google Maps, Google Analytics",
-        "Formulir kontak / permintaan penawaran",
-        "Estimasi jadi: 7-10 hari kerja",
+        "CMS admin panel",
+        "SEO",
+        "Integrasi WhatsApp, Google Maps",
+        "Estimasi: 7-10 hari kerja",
+        "Free Konsultasi",
       ],
       popular: false,
       color: "from-emerald-500 to-emerald-600",
@@ -143,10 +145,7 @@ export default function RangkaiWebPortfolio() {
       price: "Hubungi Kami",
       description: "Solusi website sesuai kebutuhan unik bisnis Anda. Konsultasikan fitur, desain, dan integrasi khusus langsung dengan tim kami.",
       features: [
-        "Desain & fitur sesuai permintaan",
-        "Integrasi sistem pihak ketiga (API, pembayaran, dsb.)",
-        "Konsultasi & support prioritas",
-        "Estimasi waktu & harga fleksibel",
+        "Paket custom menawarkan fleksibilitas tanpa batas. Kami bantu wujudkan solusi digital untuk bisnis Anda. Website paket custom cocok bagi bisnis yang membutuhkan integrasi khusus, desain unik, hingga fitur spesifik yang tidak tersedia di paket standar.",
       ],
       popular: false,
       color: "from-gray-700 to-gray-900",
@@ -565,7 +564,7 @@ export default function RangkaiWebPortfolio() {
                     </div>
                     <div>
                       <div className="font-medium">WhatsApp</div>
-                      <div className="text-blue-100">+62 8820 0522 5421</div>
+                      <div className="text-blue-100">+62882005225421</div>
                     </div>
                   </div>
 
@@ -690,7 +689,7 @@ export default function RangkaiWebPortfolio() {
               <h4 className="font-bold mb-4">Kontak</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>rangkaiweb@gmail.com</li>
-                <li>+62 8820 0522 5421</li>
+                <li>+62882005225421</li>
                 <li>@rangkaiweb</li>
               </ul>
             </div>
