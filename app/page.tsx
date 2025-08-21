@@ -30,6 +30,8 @@ import D2C from "@/assets/d2c.png"
 import Dukcapil from "@/assets/dukcapil.png"
 import Lazcoal from "@/assets/lazcoal.png"
 import SmpIPK from "@/assets/smpipk.png"
+import Pelabuhan from "@/assets/pelabuhan.png"
+import MiningGold from "@/assets/mining-gold-min.png"
 
 export default function RangkaiWebPortfolio() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -154,6 +156,54 @@ export default function RangkaiWebPortfolio() {
 
   const portfolioItems = [
     {
+      name: "SMPI-PK Muhammadiyah Delanggu Klaten",
+      type: "Sekolah",
+      description:
+        "Website sekolah dengan halaman berita, pengumuman, galeri kegiatan, dan sistem upload artikel dari admin panel.",
+      image: SmpIPK,
+      tags: ["Sekolah", "Education", "Portal"],
+    },
+    {
+      name: "Inventaris Dinas Kependudukan dan Pencatatan Sipil",
+      type: "Pemerintah - Inventaris",
+      description:
+        "Website inventaris dinas kependudukan dan pencatatan sipil kabupaten Bantul dengan fitur pencatatan, laporan, dan pencarian inventaris.",
+      image: Dukcapil,
+      tags: ["CMS", "Government", "Inventory"],
+    },
+    {
+      name: "Sistem Monitoring dan Informasi Pelabuhan",
+      type: "CMS - Monitoring dan Informasi Pelabuhan",
+      description:
+        "WWebsite CMS monitoring dan informasi pelabuhan ahmad yani yang mengelola informasi seperti dashboard, laporan, dokumen, dll.",
+      image: Pelabuhan,
+      tags: ["CMS", "Monitoring", "Informasi"],
+    },
+    {
+      name: "Mining Gold",
+      type: "Kontraktor Pertambangan",
+      description:
+        "Website yang menyediakan jasa kontraktor pertambangan.",
+      image: MiningGold,
+      tags: ["Kontraktor", "Pertambangan", "Coal"],
+    },
+    {
+      name: "D2C Gaming Store",
+      type: "Topup Game Online",
+      description:
+        "Website topup game online dengan fitur katalog, keranjang, checkout, dan notifikasi pesanan via WhatsApp.",
+      image: D2C,
+      tags: ["E-commerce", "Game", "Online Store"],
+    },
+    {
+      name: "LAZ Coal Mandiri",
+      type: "Kontraktor Pertambangan",
+      description:
+        "Website yang menyediakan jasa kontraktor pertambangan.",
+      image: Lazcoal,
+      tags: ["Kontraktor", "Pertambangan", "Coal"],
+    },
+    {
       name: "SmartClean",
       type: "Landing Page - Promo Produk",
       description:
@@ -176,38 +226,6 @@ export default function RangkaiWebPortfolio() {
         "Website sekolah dengan halaman berita, pengumuman, galeri kegiatan, dan sistem upload artikel dari admin panel.",
       image: SMKDigitalNusantara,
       tags: ["CMS", "Education", "Portal"],
-    },
-    {
-      name: "D2C Gaming Store",
-      type: "Topup Game Online",
-      description:
-        "Website topup game online dengan fitur katalog, keranjang, checkout, dan notifikasi pesanan via WhatsApp.",
-      image: D2C,
-      tags: ["E-commerce", "Game", "Online Store"],
-    },
-    {
-      name: "Inventaris Dinas Kependudukan dan Pencatatan Sipil",
-      type: "Pemerintah - Inventaris",
-      description:
-        "Website inventaris dinas kependudukan dan pencatatan sipil kabupaten Bantul dengan fitur pencatatan, laporan, dan pencarian inventaris.",
-      image: Dukcapil,
-      tags: ["CMS", "Government", "Inventory"],
-    },
-    {
-      name: "LAZ Coal Mandiri",
-      type: "Kontraktor Pertambangan",
-      description:
-        "Website yang menyediakan jasa kontraktor pertambangan.",
-      image: Lazcoal,
-      tags: ["Kontraktor", "Pertambangan", "Coal"],
-    },
-    {
-      name: "SMPI-PK Muhammadiyah Delanggu Klaten",
-      type: "Sekolah",
-      description:
-        "Website sekolah dengan halaman berita, pengumuman, galeri kegiatan, dan sistem upload artikel dari admin panel.",
-      image: SmpIPK,
-      tags: ["Sekolah", "Education", "Portal"],
     },
   ]
 
