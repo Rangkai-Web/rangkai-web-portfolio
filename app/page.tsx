@@ -172,8 +172,8 @@ export default function RangkaiWebPortfolio() {
       tags: ["CMS", "Government", "Inventory"],
     },
     {
-      name: "Sistem Monitoring dan Informasi Pelabuhan",
-      type: "CMS - Monitoring dan Informasi Pelabuhan",
+      name: "Sistem Monitoring & Informasi Pelabuhan",
+      type: "CMS - Monitoring & Informasi Pelabuhan",
       description:
         "Website CMS monitoring dan informasi pelabuhan ahmad yani yang mengelola informasi seperti dashboard, laporan, dokumen, dll.",
       image: Pelabuhan,
