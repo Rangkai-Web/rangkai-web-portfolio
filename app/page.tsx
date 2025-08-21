@@ -165,7 +165,7 @@ export default function RangkaiWebPortfolio() {
     },
     {
       name: "Inventaris Dinas Kependudukan dan Pencatatan Sipil",
-      type: "Pemerintah - Inventaris",
+      type: "CMS - Inventaris Dukcapil",
       description:
         "Website inventaris dinas kependudukan dan pencatatan sipil kabupaten Bantul dengan fitur pencatatan, laporan, dan pencarian inventaris.",
       image: Dukcapil,
@@ -175,7 +175,7 @@ export default function RangkaiWebPortfolio() {
       name: "Sistem Monitoring dan Informasi Pelabuhan",
       type: "CMS - Monitoring dan Informasi Pelabuhan",
       description:
-        "WWebsite CMS monitoring dan informasi pelabuhan ahmad yani yang mengelola informasi seperti dashboard, laporan, dokumen, dll.",
+        "Website CMS monitoring dan informasi pelabuhan ahmad yani yang mengelola informasi seperti dashboard, laporan, dokumen, dll.",
       image: Pelabuhan,
       tags: ["CMS", "Monitoring", "Informasi"],
     },
