@@ -575,7 +575,7 @@ export default function RangkaiWebPortfolio() {
                     </div>
                     <div>
                       <div className="font-medium">Email</div>
-                      <div className="text-blue-100">rangkaiweb@gmail.com</div>
+                      <div className="text-blue-100">info@rangkaiweb.com</div>
                     </div>
                   </div>
 
@@ -709,7 +709,7 @@ export default function RangkaiWebPortfolio() {
             <div>
               <h4 className="font-bold mb-4">Kontak</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>rangkaiweb@gmail.com</li>
+                <li>info@rangkaiweb.com</li>
                 <li>+62882005225421</li>
                 <li>@rangkaiweb</li>
               </ul>
