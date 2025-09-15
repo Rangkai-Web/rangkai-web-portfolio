@@ -322,7 +322,8 @@ export default function RangkaiWebPortfolio() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-20 pb-16 px-4">
+      <main>
+        <section id="home" className="pt-20 pb-16 px-4" aria-label="Beranda">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -395,8 +396,10 @@ export default function RangkaiWebPortfolio() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 px-4 bg-white">
+        </section>
+
+        {/* Services Section */}
+        <section id="services" className="py-20 px-4 bg-white" aria-label="Layanan">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100 mb-4">💼 Paket Layanan</Badge>
@@ -468,8 +471,10 @@ export default function RangkaiWebPortfolio() {
         </div>
       </section>
 
-      {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
+        </section>
+
+        {/* Portfolio Section */}
+        <section id="portfolio" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50" aria-label="Portofolio">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <Badge className="bg-green-100 text-green-800 hover:bg-green-100 mb-4">🎨 Portofolio</Badge>
@@ -519,8 +524,10 @@ export default function RangkaiWebPortfolio() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 px-4 bg-white">
+        </section>
+
+        {/* Testimonials Section */}
+        <section id="testimonials" className="py-20 px-4 bg-white" aria-label="Testimoni">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <Badge className="bg-yellow-100 text-yellow-800 hover:bg-yellow-100 mb-4">⭐ Testimoni</Badge>
@@ -553,8 +560,10 @@ export default function RangkaiWebPortfolio() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 px-4 bg-gradient-to-br from-blue-900 to-purple-900 text-white">
+        </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="py-20 px-4 bg-gradient-to-br from-blue-900 to-purple-900 text-white" aria-label="Kontak">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <Badge className="bg-white/20 text-white hover:bg-white/20 mb-4">📞 Hubungi Kami</Badge>
@@ -670,7 +679,8 @@ export default function RangkaiWebPortfolio() {
             </Card>
           </div>
         </div>
-      </section>
+        </section>
+      </main>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-4">
