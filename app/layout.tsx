@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Logo from "@/assets/Logo-2.png"
 import StructuredData from '@/components/structured-data'
+import GoogleAnalytics from '@/components/google-analytics'
 
 export const metadata: Metadata = {
   title: {
@@ -90,6 +91,7 @@ export default function RootLayout({
         <link rel="icon" href={Logo.src} type="image/png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <StructuredData />
+        <GoogleAnalytics />
       </head>
       <body>{children}</body>
     </html>
