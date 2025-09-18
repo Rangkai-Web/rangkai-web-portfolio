@@ -5,7 +5,7 @@ import { Star } from "lucide-react"
 const Testimoni = () => {
   const testimonials = [
     {
-      name: "Nicofaart Woodwork",
+      name: "Nico Faal Akbar",
       role: "Owner Nicofaart Woodwork",
       content:
         "Terima kasih rangkai web, pelayanan nya sangat baik membuat saya nyaman! Hasil websitenya pun bagus sekali melebihi ekspektasi saya 😍",
