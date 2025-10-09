@@ -9,7 +9,7 @@ const AboutUs = () => {
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-20 items-center justify-center">
           <div className="text-left">
-            <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100 mb-4 text-base">Rangkai Web</Badge>
+            <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Rangkai Web</Badge>
             <h2 className="text-3xl lg:text-4xl text-gray-900 mb-8">Membangun Website, Menguatkan Brand</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Rangkai Web hadir sebagai solusi tepat untuk membantu pelaku usaha dan instansi bertransformasi ke dunia digital dengan identitas online yang kuat dan berkarakter.

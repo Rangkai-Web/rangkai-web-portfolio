@@ -50,7 +50,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             <Image src={Logo} alt="Rangkai Web" width={48} height={48} className="rounded-full" />
-            <span className="text-xl font-bold text-black">Rangkai <span className="text-orange-500">Web</span></span>
+            <span className="text-xl font-medium text-black">Rangkai <span className="text-orange-500">Web</span></span>
           </div>
 
           {/* Desktop Navigation */}

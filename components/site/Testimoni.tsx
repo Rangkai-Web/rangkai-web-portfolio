@@ -37,7 +37,7 @@ const Testimoni = () => {
       </div>
       <div className="relative container mx-auto">
         <div className="text-center mb-8">
-          <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100 mb-4 text-base">Testimoni</Badge>
+          <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Testimoni</Badge>
           <h2 className="text-3xl lg:text-4xl text-white mb-4">Apa Kata Klien Kami?</h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Kepuasan klien adalah prioritas utama kami. Berikut testimoni dari beberapa klien yang telah mempercayai

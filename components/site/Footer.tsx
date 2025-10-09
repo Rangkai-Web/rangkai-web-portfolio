@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Image src={Logo} alt="Rangkai Web" width={48} height={48} className="rounded-full" />
-              <span className="text-xl font-bold text-white">Rangkai <span className="text-orange-500">Web</span></span>
+              <span className="text-xl font-medium text-white">Rangkai <span className="text-orange-500">Web</span></span>
             </div>
             <p className="text-gray-400">
               Jasa pembuatan website profesional dengan harga terjangkau untuk semua jenis bisnis.

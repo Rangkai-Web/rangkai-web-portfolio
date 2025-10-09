@@ -9,7 +9,7 @@ const Portfolio = () => {
     <section id="portfolio" className="py-32 px-4 bg-white" aria-label="Portofolio">
       <div className="container mx-auto">
         <div className="text-center mb-8">
-          <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100 mb-4 text-base">Portofolio</Badge>
+          <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Portofolio</Badge>
           <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4">Karya Terbaik Kami</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Lihat beberapa project website yang telah kami kerjakan untuk berbagai jenis bisnis

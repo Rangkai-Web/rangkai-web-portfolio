@@ -129,7 +129,7 @@ export function HeroSection() {
       {/* Content Overlay */}
       <div className="absolute inset-0 container mx-auto px-4 flex pb-16">
         <div className="flex flex-col justify-center items-start gap-4 text-white">
-          <Badge className="w-fit bg-orange-100 text-orange-800 hover:bg-orange-100 text-base">
+          <Badge className="w-fit text-orange-600 font-medium bg-orange-100 text-base">
             Solusi Tepat di Era Digital
           </Badge>
           <h1 className="text-4xl lg:text-6xl text-white leading-tight">

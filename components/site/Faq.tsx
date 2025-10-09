@@ -60,7 +60,7 @@ export function FAQ() {
     <section id="faq" className="py-32 px-4" aria-label="FAQ">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-center w-full mb-8">
-          <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100 mb-4 text-base">FAQ</Badge>
+          <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">FAQ</Badge>
           <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4">Pertanyaan Umum Seputar Layanan Rangkai Web</h2>
         </div>
 

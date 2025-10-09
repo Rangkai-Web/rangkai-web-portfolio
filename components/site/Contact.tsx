@@ -43,7 +43,7 @@ const Contact = () => {
     <section id="contact" className="relative py-32 px-4 bg-gradient-to-r from-orange-500 to-amber-500 text-white" aria-label="Hubungi Kami">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-8">
-          <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100 mb-4 text-base">Hubungi Kami</Badge>
+          <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Hubungi Kami</Badge>
           <h2 className="text-3xl lg:text-4xl text-white mb-4">Konsultasikan Kebutuhan <br/> Website Anda</h2>
           <p className="text-xl text-white max-w-3xl mx-auto">
             Ceritakan kebutuhan website Anda, kami akan merespons dalam 24 jam
