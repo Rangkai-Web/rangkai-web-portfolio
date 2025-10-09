@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Logo from "@/assets/Logo-2.png"
 import StructuredData from '@/components/structured-data'
 import GoogleAnalytics from '@/components/google-analytics'
 
@@ -50,7 +49,7 @@ export const metadata: Metadata = {
     siteName: 'Rangkai Web',
     images: [
       {
-        url: Logo.src,
+        url: '/Logo-2.png',
         width: 1200,
         height: 630,
         alt: 'Rangkai Web - Jasa Pembuatan Website Profesional',
@@ -61,7 +60,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Rangkai Web - Jasa Pembuatan Website Profesional & Terjangkau',
     description: 'Jasa pembuatan website profesional, landing page, toko online, dan website bisnis dengan harga terjangkau. Bantu bisnis Anda tampil online dan kredibel bersama Rangkai Web.',
-    images: [Logo.src],
+    images: ['@/assets/others/Logo-2.png'],
     creator: '@rangkaiweb',
   },
   robots: {
@@ -88,12 +87,17 @@ export default function RootLayout({
   return (
     <html lang="id">
       <head>
-        <link rel="icon" href={Logo.src} type="image/png" />
+        <link rel="icon" href="@/assets/others/Logo-2.png" type="image/png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
         <StructuredData />
         <GoogleAnalytics />
       </head>
-      <body>{children}</body>
+      <body className="font-sans" style={{ fontFamily: 'Poppins' }}>
+        {children
+      }</body>
     </html>
   )
 }

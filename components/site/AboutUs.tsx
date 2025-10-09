@@ -1,0 +1,37 @@
+import React from 'react'
+import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
+import Woman from "@/assets/others/woman-holding-mac.jpeg"
+
+const AboutUs = () => {
+  return (
+    <section id="about-us" className="container mx-auto py-32 px-4 md:mt-20" aria-label="Tentang Kami">
+      <div className="container mx-auto">
+        <div className="grid lg:grid-cols-2 gap-20 items-center justify-center">
+          <div className="text-left">
+            <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100 mb-4 text-base">Rangkai Web</Badge>
+            <h2 className="text-3xl lg:text-4xl text-gray-900 mb-8">Membangun Website, Menguatkan Brand</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Rangkai Web hadir sebagai solusi tepat untuk membantu pelaku usaha dan instansi bertransformasi ke dunia digital dengan identitas online yang kuat dan berkarakter.
+              Kami menggabungkan <span className="font-semibold">desain estetis</span>, <span className="font-semibold">teknologi modern</span>, dan <span className="font-semibold">strategi pemasaran</span> untuk menghadirkan website yang tidak hanya menarik secara visual, tetapi juga profesional dan berorientasi pada hasil. <br/><br/>
+              Setiap detail kami pikirkan, mulai dari struktur konten, pemilihan warna, kecepatan loading, hingga optimasi SEO, agar setiap pengunjung website mendapatkan pengalaman yang menyenangkan dan terpercaya.
+              Bersama Rangkai Web, website bukan sekadar halaman online biasa, tetapi representasi digital dari kualitas dan nilai bisnis Anda.
+            </p>
+          </div>
+          <div className="relative bg-transparent">
+            <Image
+              src={Woman}
+              alt="woman holding mac"
+              width={600}
+              height={500}
+              className="rounded-2xl hover:scale-105 transition-all duration-300"
+              draggable={false}
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default AboutUs

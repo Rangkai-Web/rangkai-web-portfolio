@@ -5,7 +5,7 @@ export default function StructuredData() {
     "name": "Rangkai Web",
     "description": "Jasa pembuatan website profesional, landing page, toko online, dan website bisnis dengan harga terjangkau",
     "url": "https://rangkaiweb.com",
-    "logo": "https://rangkaiweb.com/assets/Logo-2.png",
+    "logo": "https://rangkaiweb.com/assets/others/Logo-2.png",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+62882005225421",

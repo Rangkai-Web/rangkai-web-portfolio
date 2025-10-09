@@ -1,6 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Star } from "lucide-react"
+import { Quote, Star } from "lucide-react"
+import Teamwork from "@/assets/others/teamwork.jpg"
+import Image from "next/image"
 
 const Testimoni = () => {
   const testimonials = [
@@ -28,12 +30,16 @@ const Testimoni = () => {
   ]
 
   return (
-    <section id="testimonials" className="py-20 px-4 bg-white" aria-label="Testimoni">
-      <div className="container mx-auto">
-        <div className="text-center mb-16">
-          <Badge className="bg-yellow-100 text-yellow-800 hover:bg-yellow-100 mb-4">⭐ Testimoni</Badge>
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Apa Kata Klien Kami?</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+    <section id="testimonials" className="relative py-32 px-4" aria-label="Testimoni">
+      <div className="absolute inset-0">
+        <Image src={Teamwork} alt="Teamwork" className="h-full w-full object-cover" />
+        <div className="absolute inset-0 bg-black/70" />
+      </div>
+      <div className="relative container mx-auto">
+        <div className="text-center mb-8">
+          <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-100 mb-4 text-base">Testimoni</Badge>
+          <h2 className="text-3xl lg:text-4xl text-white mb-4">Apa Kata Klien Kami?</h2>
+          <p className="text-xl text-white max-w-3xl mx-auto">
             Kepuasan klien adalah prioritas utama kami. Berikut testimoni dari beberapa klien yang telah mempercayai
             layanan kami
           </p>
@@ -41,19 +47,20 @@ const Testimoni = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-gradient-to-br from-gray-50 to-blue-50 hover:shadow-lg transition-shadow duration-300">
+            <Card key={index} className="border border-white shadow-2xl bg-white/80 transition-shadow duration-300">
               <CardHeader>
-                <div className="flex items-center space-x-1 mb-4">
+                <Quote className="w-10 h-10 fill-orange-500 text-orange-500" />
+                <CardTitle className="text-xl font-medium">{testimonial.name}</CardTitle>
+                <CardDescription>{testimonial.role}</CardDescription>
+                <div className="flex items-center space-x-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className="w-5 h-5 fill-orange-500 text-orange-500" />
                   ))}
                 </div>
-                <CardTitle className="text-lg">{testimonial.name}</CardTitle>
-                <CardDescription>{testimonial.role}</CardDescription>
               </CardHeader>
 
               <CardContent>
-                <p className="text-gray-700 italic">"{testimonial.content}"</p>
+                <p className="text-gray-600 italic">"{testimonial.content}"</p>
               </CardContent>
             </Card>
           ))}

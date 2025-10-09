@@ -1,22 +1,40 @@
 "use client"
 
-import Navigation from "@/components/Navigation"
-import Home from "@/components/Home"
-import Services from "@/components/Services"
-import Portfolio from "@/components/Portfolio"
-import Testimoni from "@/components/Testimoni"
-import Contact from "@/components/Contact"
-import Footer from "@/components/Footer"
+import Navigation from "@/components/site/Navigation"
+import { Topbar } from "@/components/site/Topbar"
+import { HeroSection } from "@/components/site/Hero"
+import ServicesStrip from "@/components/site/ServicesStrip"
+import AboutUs from "@/components/site/AboutUs"
+import { Benefits } from "@/components/site/Benefits"
+import Services from "@/components/site/Services"
+import Portfolio from "@/components/site/Portfolio"
+import Testimoni from "@/components/site/Testimoni"
+import { FAQ } from "@/components/site/Faq"
+import Contact from "@/components/site/Contact"
+import Footer from "@/components/site/Footer"
 
 export default function RangkaiWebPortfolio() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-white">
+      {/* Topbar */}
+      <Topbar />
+      
       {/* Navigation */}
       <Navigation />
 
-      {/* Hero Section */}
       <main>
-        <Home />
+        {/* Hero Section */}
+        <HeroSection />
+
+        <div className="relative md:-mt-6">
+          <ServicesStrip />
+        </div>
+
+        {/* About Us Section */}
+        <AboutUs />
+
+        {/* Benefits Section */}
+        <Benefits />
 
         {/* Services Section */}
         <Services />
@@ -26,6 +44,9 @@ export default function RangkaiWebPortfolio() {
         
         {/* Testimonials Section */}
         <Testimoni />
+
+        {/* FAQ Section */}
+        <FAQ />
 
         {/* Contact Section */}
         <Contact />

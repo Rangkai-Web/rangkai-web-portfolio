@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import Logo from "@/assets/Logo-2.png"
+import Logo from "@/assets/others/Logo-2.png"
 import {
   Menu,
   X,
 } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
+import { whatsappHref } from "@/lib/site"
+import { Button } from "../ui/button"
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -12,7 +15,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "services", "portfolio", "testimonials", "contact"]
+      const sections = ["home", "about-us", "services", "portfolio", "testimonials", "contact"]
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -42,7 +45,7 @@ const Navigation = () => {
   }
 
   return (
-    <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+    <nav className="sticky top-0 w-full bg-white/70 backdrop-blur-sm border-b border-gray-200 z-50" aria-label="Navigation">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
@@ -51,17 +54,19 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {["home", "services", "portfolio", "testimonials", "contact"].map((item) => (
+          <div className="hidden md:flex items-center gap-4">
+            {["home", "about-us", "services", "portfolio", "testimonials", "contact"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className={`capitalize transition-colors ${
-                  activeSection === item ? "text-blue-600 font-medium" : "text-gray-600 hover:text-blue-600"
+                className={`capitalize transition-colors cursor-pointer py-1 px-3 ${
+                  activeSection === item ? "text-orange-600 font-medium bg-orange-100 rounded-full" : "text-gray-600 hover:text-orange-600"
                 }`}
               >
                 {item === "home"
                   ? "Beranda"
+                  : item === "about-us"
+                    ? "Tentang Kami"
                   : item === "services"
                     ? "Layanan"
                     : item === "portfolio"
@@ -77,19 +82,28 @@ const Navigation = () => {
           <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
+
+          <div className="hidden md:flex">
+            <Button className="bg-rangkai-primary hover:bg-rangkai-primary/90 text-white animate-bounce" onClick={() => window.open(whatsappHref(), "_blank")}>
+              <FaWhatsapp className="w-4 h-4" />
+              WhatsApp
+            </Button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
-            {["home", "services", "portfolio", "testimonials", "contact"].map((item) => (
+            {["home", "about-us", "services", "portfolio", "testimonials", "contact"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="block w-full text-left py-2 px-4 text-gray-600 hover:text-blue-600 hover:bg-gray-50 capitalize"
+                className="block w-full text-left py-2 px-4 text-gray-600 hover:text-orange-600 hover:bg-orange-50 capitalize cursor-pointer"
               >
                 {item === "home"
                   ? "Beranda"
+                  : item === "about-us"
+                    ? "Tentang Kami"
                   : item === "services"
                     ? "Layanan"
                     : item === "portfolio"
