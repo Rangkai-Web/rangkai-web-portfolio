@@ -13,7 +13,7 @@ export const PORTOFOLIO = [
   {
     name: "Nicofaart Woodwork",
     type: "Landing Page",
-    description: "Produsen furniture dari Jepara dengan kualitas premium. Furniture berkualitas tinggi dengan tukang kayu terbaik dari Jepara.",
+    description: "Website landing page untuk produsen furniture asli Jepara yang menunjukkan kualitas premium dan desain elegan. Dibuat untuk memperkuat branding Nicofaart Woodwork sebagai penyedia furniture berkualitas tinggi yang dikerjakan oleh tukang kayu profesional Jepara.",
     image: Nicofaart,
     tags: ["Furniture"],
   },
@@ -21,15 +21,15 @@ export const PORTOFOLIO = [
     name: "SMPI-PK Muhammadiyah Delanggu Klaten",
     type: "Company Profile",
     description:
-      "Website sekolah dengan halaman berita, pengumuman, galeri kegiatan, dan sistem upload artikel dari admin panel.",
+      "Website sekolah yang dikembangkan untuk menampilkan informasi seputar kegiatan akademik, berita, serta galeri siswa. Memudahkan pihak sekolah dalam menyebarkan informasi artikel atau berita tentang sekolah tersebut.",
     image: SmpIPK,
     tags: ["Sekolah", "Education", "Portal"],
   },
   {
-    name: "Inventaris Dinas Kependudukan dan Pencatatan Sipil",
+    name: "Inventaris Dukcapil",
     type: "Website Custom",
     description:
-      "Website inventaris dinas kependudukan dan pencatatan sipil kabupaten Bantul dengan fitur pencatatan, laporan, dan pencarian inventaris.",
+      "Sistem berbasis website untuk membantu pengelolaan data inventaris Dinas Kependudukan dan Pencatatan Sipil Kabupaten Bantul. Dirancang agar proses pencatatan, pelaporan, dan pencarian inventaris menjadi lebih cepat dan akurat.",
     image: Dukcapil,
     tags: ["CMS", "Government", "Inventory"],
   },
@@ -37,7 +37,7 @@ export const PORTOFOLIO = [
     name: "Sistem Monitoring & Informasi Pelabuhan",
     type: "Website Custom",
     description:
-      "Website CMS monitoring dan informasi pelabuhan ahmad yani yang mengelola informasi seperti dashboard, laporan, dokumen, dll.",
+      "Website CMS yang dirancang khusus untuk membantu pengelolaan data dan aktivitas pelabuhan secara efisien. Sistem ini menampilkan berbagai informasi penting seperti dashboard aktivitas, laporan, dokumen, hingga data operasional dalam satu platform terintegrasi.",
     image: Pelabuhan,
     tags: ["CMS", "Monitoring", "Informasi"],
   },
@@ -45,15 +45,15 @@ export const PORTOFOLIO = [
     name: "Mining Gold",
     type: "Company Profile",
     description:
-      "Website yang menyediakan jasa kontraktor pertambangan.",
+      "Website company profile ini dibangun untuk menampilkan profesionalitas dan kapabilitas perusahaan kontraktor pertambangan secara komprehensif. Desainnya menggabungkan elemen industri yang kuat dan modern.",
     image: MiningGold,
     tags: ["Kontraktor", "Pertambangan", "Coal"],
   },
   {
     name: "D2C Gaming Store",
-    type: "Website Custom",
+    type: "Online Shop",
     description:
-      "Website topup game online dengan fitur katalog, keranjang, checkout, dan notifikasi pesanan via WhatsApp.",
+      "Website top-up game online dengan sistem keranjang, katalog, dan notifikasi pesanan via WhatsApp. Didesain agar pengguna dapat melakukan pembelian saldo game secara cepat, aman, dan praktis.",
     image: D2C,
     tags: ["E-commerce", "Game", "Online Store"],
   },
@@ -61,7 +61,7 @@ export const PORTOFOLIO = [
     name: "LAZ Coal Mandiri",
     type: "Company Profile",
     description:
-      "Website yang menyediakan jasa kontraktor pertambangan.",
+      "Website company profile ini dibangun untuk menampilkan profesionalitas dan kapabilitas perusahaan kontraktor pertambangan secara komprehensif. Desainnya menggabungkan elemen industri yang kuat dan modern.",
     image: Lazcoal,
     tags: ["Kontraktor", "Pertambangan", "Coal"],
   },
@@ -82,11 +82,11 @@ export const PORTOFOLIO = [
     tags: ["E-commerce", "Fashion", "Online Store"],
   },
   {
-    name: "Wedding Invitation",
+    name: "Jasa Wedding Organizer",
     type: "Landing Page",
     description:
-      "Website undangan pernikahan dengan fitur acara, jadwal, dan lokasi.",
+      "Website landing page ini dirancang untuk menampilkan keindahan dan profesionalitas dari layanan wedding organizer. Fokus utamanya adalah menciptakan kesan pertama yang romantis dan meyakinkan, agar calon pengantin merasa tertarik saat akses landing page.",
     image: Wedding,
-    tags: ["Wedding", "Invitation", "Event"],
+    tags: ["Wedding", "Event", "Organizer"],
   },
 ]
