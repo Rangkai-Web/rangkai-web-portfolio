@@ -6,7 +6,7 @@ import { FaTiktok } from "react-icons/fa"
 export function Topbar() {
   return (
     <div className="w-full bg-gradient-to-br from-orange-50 to-amber-50" aria-label="Topbar">
-      <div className="mx-auto px-4 py-2 text-sm flex items-center justify-between">
+      <div className="mx-auto px-6 py-2 text-sm flex items-center justify-between">
         <p className="text-balance flex items-center gap-2 hover:text-orange-500">
           <Mail className="w-4 h-4" />
           <a href={`mailto:${CONTACT.email}`} target="_blank">{CONTACT.email}</a>

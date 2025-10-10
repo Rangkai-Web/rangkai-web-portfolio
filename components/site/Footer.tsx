@@ -12,11 +12,11 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-[#111] text-white py-12 px-4" aria-label="Footer">
-      <div className="container mx-auto">
+    <footer className="bg-[#111] text-white py-12" aria-label="Footer">
+      <div className="container mx-auto max-w-7xl px-8 md:px-24 xl:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
+            <div className="flex flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center space-x-2">
               <Image src={Logo} alt="Rangkai Web" width={48} height={48} className="rounded-full" />
               <span className="text-xl font-medium text-white">Rangkai <span className="text-orange-500">Web</span></span>
             </div>

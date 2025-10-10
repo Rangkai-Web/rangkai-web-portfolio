@@ -57,14 +57,14 @@ const items = [
 
 export function FAQ() {
   return (
-    <section id="faq" className="py-32 px-4" aria-label="FAQ">
-      <div className="container mx-auto">
+    <section id="faq" className="" aria-label="FAQ">
+      <div className="container mx-auto max-w-7xl px-8 md:px-24 xl:px-8 py-32">
         <div className="flex flex-col items-center justify-center w-full mb-8">
           <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">FAQ</Badge>
-          <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4">Pertanyaan Umum Seputar Layanan Rangkai Web</h2>
+          <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4 text-center">Pertanyaan Umum Seputar Layanan <br/> <span className="bg-gradient-to-r from-orange-300 to-rangkai-primary bg-clip-text text-transparent">Rangkai Web</span></h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           <Accordion type="single" collapsible className="w-full">
             {items.slice(0, Math.ceil(items.length / 2)).map((it, idx) => (
               <AccordionItem key={idx} value={`item-${idx}`} className="">

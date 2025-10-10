@@ -46,7 +46,7 @@ const Navigation = () => {
 
   return (
     <nav className="sticky top-0 w-full bg-white/70 backdrop-blur-sm border-b border-gray-200 z-50" aria-label="Navigation">
-      <div className="container mx-auto px-4">
+      <div className="mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             <Image src={Logo} alt="Rangkai Web" width={48} height={48} className="rounded-full" />
@@ -54,7 +54,7 @@ const Navigation = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden lg:flex items-center">
             {["home", "about-us", "services", "portfolio", "testimonials", "contact"].map((item) => (
               <button
                 key={item}
@@ -79,11 +79,11 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="lg:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
 
-          <div className="hidden md:flex">
+          <div className="hidden lg:flex">
             <Button className="bg-rangkai-primary hover:bg-rangkai-primary/90 text-white animate-bounce" onClick={() => window.open(whatsappHref(), "_blank")}>
               <FaWhatsapp className="w-4 h-4" />
               WhatsApp
@@ -93,7 +93,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-200">
+          <div className="lg:hidden py-4 border-t border-gray-200">
             {["home", "about-us", "services", "portfolio", "testimonials", "contact"].map((item) => (
               <button
                 key={item}

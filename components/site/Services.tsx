@@ -39,8 +39,8 @@ const Services = () => {
   }, [api])
 
   return (
-    <section id="services" className="py-32 px-4 bg-[#F7F7F7]" aria-label="Paket Layanan">
-      <div className="container mx-auto">
+    <section id="services" className="bg-[#F7F7F7]" aria-label="Paket Layanan">
+      <div className="container mx-auto max-w-7xl px-8 md:px-24 xl:px-8 py-32">
         <div className="text-center mb-8 md:mb-0">
           <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Paket Layanan</Badge>
           <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4">
@@ -62,7 +62,7 @@ const Services = () => {
           >
             <CarouselContent className="-ml-2 md:-ml-4 md:py-12">
               {PACKAGES.map((pkg, index) => (
-                <CarouselItem key={index} className="pl-4 md:pl-8 md:basis-1/3">
+                <CarouselItem key={index} className="p-4 md:pr-8 basis:1/3 lg:basis-1/2 xl:basis-1/3">
                   <Card
                     className={`relative rounded-2xl bg-white border-0 md:shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between h-full ${
                       pkg.popular ? "ring-4 ring-orange-500" : ""

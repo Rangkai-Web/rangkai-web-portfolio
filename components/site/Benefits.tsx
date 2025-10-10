@@ -28,9 +28,22 @@ export function Benefits() {
     })
   }, [api])
 
+  // Auto-slide functionality
+  useEffect(() => {
+    if (!api || benefits.length < 3) {
+      return
+    }
+
+    const interval = setInterval(() => {
+      api.scrollNext()
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [api, benefits.length])
+
   return (
-    <section id="keunggulan" className="w-full bg-white pb-32 px-4" aria-label="Keuntungan Menggunakan Jasa Rangkai Web">
-      <div className="container mx-auto max-w-6xl text-center">
+    <section id="keunggulan" className="w-full bg-white" aria-label="Keuntungan Menggunakan Jasa Rangkai Web">
+      <div className="container mx-auto max-w-7xl px-8 md:px-24 xl:px-8 text-center pb-32">
         <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Mengapa Memilih Kami</Badge>
         <h2 className="text-3xl lg:text-4xl text-gray-900 mb-8">Keuntungan Menggunakan Jasa Rangkai Web</h2>
 
@@ -45,7 +58,7 @@ export function Benefits() {
           >
             <CarouselContent className="-ml-2 md:-ml-4 py-0 md:py-10">
               {benefits.map((b, index) => (
-                <CarouselItem key={b.title} className="pb-10 px-2 md:px-4 md:basis-1/3">
+                <CarouselItem key={b.title} className="pb-10 px-2 md:px-4 basis:1/3 md:basis-1/2 xl:basis-1/3">
                   <div className="bg-white rounded-2xl border border-white p-6 shadow-xl hover:-translate-y-2 transition-all duration-300 h-full flex justify-items-start items-center flex-col gap-4">
                     <b.icon className="size-16 text-orange-500" aria-hidden />
                     <h3 className="font-medium text-2xl">{b.title}</h3>

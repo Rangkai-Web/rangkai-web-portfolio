@@ -5,7 +5,7 @@ import Woman from "@/assets/others/woman-holding-mac.jpeg"
 
 const AboutUs = () => {
   return (
-    <section id="about-us" className="container mx-auto py-32 px-4 md:mt-20" aria-label="Tentang Kami">
+    <section id="about-us" className="container mx-auto max-w-7xl px-8 md:px-24 xl:px-8 py-32 md:mt-20" aria-label="Tentang Kami">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-20 items-center justify-center">
           <div className="text-left">
@@ -13,7 +13,7 @@ const AboutUs = () => {
             <h2 className="text-3xl lg:text-4xl text-gray-900 mb-8">Membangun Website, Menguatkan Brand</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Rangkai Web hadir sebagai solusi tepat untuk membantu pelaku usaha dan instansi bertransformasi ke dunia digital dengan identitas online yang kuat dan berkarakter.
-              Kami menggabungkan <span className="font-semibold">desain estetis</span>, <span className="font-semibold">teknologi modern</span>, dan <span className="font-semibold">strategi pemasaran</span> untuk menghadirkan website yang tidak hanya menarik secara visual, tetapi juga profesional dan berorientasi pada hasil. <br/><br/>
+              Kami menggabungkan desain estetis, teknologi modern, dan strategi pemasaran untuk menghadirkan website yang tidak hanya menarik secara visual, tetapi juga profesional dan berorientasi pada hasil. <br/><br/>
               Setiap detail kami pikirkan, mulai dari struktur konten, pemilihan warna, kecepatan loading, hingga optimasi SEO, agar setiap pengunjung website mendapatkan pengalaman yang menyenangkan dan terpercaya.
               Bersama Rangkai Web, website bukan sekadar halaman online biasa, tetapi representasi digital dari kualitas dan nilai bisnis Anda.
             </p>
