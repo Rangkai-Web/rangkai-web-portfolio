@@ -127,14 +127,14 @@ export function HeroSection() {
       </button> */}
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 container mx-auto max-w-7xl px-8 md:px-28 lg:px-24 flex pb-16">
-        <div className="flex flex-col justify-center items-start gap-4 text-white pt-12 md:pt-0">
+      <div className="absolute inset-0 container mx-auto max-w-7xl p-8 md:px-28 lg:px-24 flex">
+        <div className="flex flex-col justify-center items-start gap-4 text-white pt-[env(safe-area-inset-top,3rem)] md:pt-0">
           <Badge className="w-fit text-orange-600 font-medium bg-orange-100 text-base">
             Solusi Tepat di Era Digital
           </Badge>
           <h1 className="text-4xl lg:text-6xl text-white leading-tight">
             Jasa Pembuatan Website <br/>
-            <span className="bg-gradient-to-r from-orange-300 to-rangkai-primary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-300 to-rangkai-primary bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
               Profesional & Terpercaya
             </span>
           </h1>

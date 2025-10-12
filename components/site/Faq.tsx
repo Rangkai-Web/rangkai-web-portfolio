@@ -61,7 +61,7 @@ export function FAQ() {
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="flex flex-col items-center justify-center w-full mb-8">
           <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">FAQ</Badge>
-          <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4 text-center">Pertanyaan Umum Seputar Layanan <br/> <span className="bg-gradient-to-r from-orange-300 to-rangkai-primary bg-clip-text text-transparent">Rangkai Web</span></h2>
+          <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4 text-center">Pertanyaan Umum Seputar Layanan <br/> <span className="bg-gradient-to-r from-orange-300 to-rangkai-primary bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">Rangkai Web</span></h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
