@@ -40,7 +40,7 @@ const Services = () => {
 
   return (
     <section id="services" className="bg-[#F7F7F7]" aria-label="Paket Layanan">
-      <div className="container mx-auto max-w-7xl px-8 md:px-24 xl:px-8 py-32">
+      <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-8 md:mb-0">
           <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Paket Layanan</Badge>
           <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4">

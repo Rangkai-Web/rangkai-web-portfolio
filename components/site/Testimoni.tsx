@@ -67,7 +67,7 @@ const Testimoni = () => {
         <Image src={Teamwork} alt="Teamwork" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-black/70" />
       </div>
-      <div className="relative container mx-auto max-w-7xl px-8 md:px-24 xl:px-8 py-32">
+      <div className="relative container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-8">
           <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Testimoni</Badge>
           <h2 className="text-3xl lg:text-4xl text-white mb-4">Apa Kata Klien Kami?</h2>

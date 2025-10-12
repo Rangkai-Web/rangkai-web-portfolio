@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#111] text-white py-12" aria-label="Footer">
-      <div className="container mx-auto max-w-7xl px-8 md:px-24 xl:px-8">
+      <div className="container mx-auto max-w-7xl px-8 md:px-24">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center space-x-2">

@@ -41,7 +41,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="relative bg-gradient-to-r from-orange-500 to-amber-500 text-white" aria-label="Hubungi Kami">
-      <div className="container mx-auto max-w-7xl px-8 md:px-24 xl:px-8 py-32">
+      <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-8">
           <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Hubungi Kami</Badge>
           <h2 className="text-3xl lg:text-4xl text-white mb-4">Konsultasikan Kebutuhan <br/> Website Anda</h2>
@@ -61,7 +61,7 @@ const Contact = () => {
 
             <form onSubmit={handleContactSubmit}>
               <CardContent className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Input
                     name="name"
                     placeholder="Nama Anda"

@@ -7,7 +7,7 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio" className="bg-white" aria-label="Portofolio">
-      <div className="container mx-auto max-w-7xl px-8 md:px-24 xl:px-8 py-32">
+      <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-8">
           <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Portofolio</Badge>
           <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4">Karya Terbaik Kami</h2>

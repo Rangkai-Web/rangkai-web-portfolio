@@ -43,7 +43,7 @@ export function Benefits() {
 
   return (
     <section id="keunggulan" className="w-full bg-white" aria-label="Keuntungan Menggunakan Jasa Rangkai Web">
-      <div className="container mx-auto max-w-7xl px-8 md:px-24 xl:px-8 text-center pb-32">
+      <div className="container mx-auto max-w-7xl px-8 md:px-24 text-center pb-32">
         <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Mengapa Memilih Kami</Badge>
         <h2 className="text-3xl lg:text-4xl text-gray-900 mb-8">Keuntungan Menggunakan Jasa Rangkai Web</h2>
 

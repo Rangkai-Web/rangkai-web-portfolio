@@ -5,7 +5,7 @@ import Woman from "@/assets/others/woman-holding-mac.jpeg"
 
 const AboutUs = () => {
   return (
-    <section id="about-us" className="container mx-auto max-w-7xl px-8 md:px-24 xl:px-8 py-32 md:mt-20" aria-label="Tentang Kami">
+    <section id="about-us" className="container mx-auto max-w-7xl px-8 md:px-24 py-32 md:mt-20" aria-label="Tentang Kami">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-20 items-center justify-center">
           <div className="text-left">
