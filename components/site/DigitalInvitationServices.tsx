@@ -7,7 +7,7 @@ const DigitalInvitationServices = () => {
     {
       icon: Gift,
       title: "Beragam Pilihan Tema",
-      description: "Kami menyediakan banyak pilihan tema untuk undangan online yang bisa langsung anda gunakan atau sesuaikan sesuai kebutuhanmu."
+      description: "Kami menyediakan banyak pilihan tema untuk undangan online yang bisa langsung Anda gunakan atau sesuaikan sesuai kebutuhan Anda."
     },
     {
       icon: Music,
@@ -17,12 +17,12 @@ const DigitalInvitationServices = () => {
     {
       icon: Users,
       title: "Undangan Tanpa Batas",
-      description: "Sebar undangan ke tamu sebanyak mungkin tanpa batas. Jangkau lebih banyak orang tanpa khawatir ada yang tak kebagian undanganmu."
+      description: "Sebar undangan ke tamu sebanyak mungkin tanpa batas. Jangkau lebih banyak orang tanpa khawatir ada yang tak kebagian undangan Anda."
     },
     {
       icon: Calendar,
       title: "Kirim Undangan Instan",
-      description: "Bagikan undangan digital dengan cepat dan mudah lewat WhatsApp ke kontak yang anda miliki. Undangan bisa langsung diterima dan dibaca oleh tamu undangan."
+      description: "Bagikan undangan digital dengan cepat dan mudah lewat WhatsApp ke kontak yang Anda miliki. Undangan bisa langsung diterima dan dibaca oleh tamu undangan."
     }
   ]
 
