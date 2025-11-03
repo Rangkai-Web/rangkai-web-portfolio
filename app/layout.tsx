@@ -87,7 +87,7 @@ export default function RootLayout({
   return (
     <html lang="id">
       <head>
-        <link rel="icon" href="@/assets/others/Logo-2.png" type="image/png" />
+        <link rel="icon" href="@/assets/others/favicon.png" type="image/png" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

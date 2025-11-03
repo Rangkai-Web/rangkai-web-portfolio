@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Logo from "@/assets/others/Logo-2.png"
+import Logo from "@/assets/others/logo-white.png"
 import { Instagram, Mail, } from "lucide-react"
 import { FaTiktok, FaWhatsapp } from "react-icons/fa";
 
@@ -17,8 +17,8 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex flex-row md:flex-col lg:flex-row items-center md:items-start lg:items-center space-x-2">
-              <Image src={Logo} alt="Rangkai Web" width={48} height={48} className="rounded-full" />
-              <span className="text-xl font-medium text-white">Rangkai <span className="text-orange-500">Web</span></span>
+              <Image src={Logo} alt="Rangkai Web" width={96} height={96} className="" />
+              {/* <span className="text-xl font-medium text-white">Rangkai <span className="text-orange-500">Web</span></span> */}
             </div>
             <p className="text-gray-400">
               Jasa pembuatan website profesional dengan harga terjangkau untuk semua jenis bisnis.
