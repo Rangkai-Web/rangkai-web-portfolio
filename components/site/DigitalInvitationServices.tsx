@@ -35,7 +35,7 @@ const DigitalInvitationServices = () => {
             Ahlinya Jasa Undangan Website
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Kami menawarkan Jasa Undangan Website untuk Pernikahan, Ulang Tahun, Aqiqah dan Walimatussafar. Kami siap membuat undangan digital yang bukan hanya cantik, tapi juga fungsional.
+            Kami menawarkan Jasa Undangan Website untuk Pernikahan, Khitan, Ulang Tahun, Aqiqah dan Walimatussafar. Kami siap membuat undangan digital yang bukan hanya cantik, tapi juga fungsional.
           </p>
         </div>
 
