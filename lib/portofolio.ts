@@ -8,6 +8,7 @@ import Lazcoal from "@/assets/portofolio/lazcoal.png"
 import SmpIPK from "@/assets/portofolio/smpipk.png"
 import Pelabuhan from "@/assets/portofolio/pelabuhan.png"
 import MiningGold from "@/assets/portofolio/mining-gold-min.png"
+import RasaNusa from "@/assets/portofolio/RasaNusa.png"
 
 export const PORTOFOLIO = [
   {
@@ -88,5 +89,13 @@ export const PORTOFOLIO = [
       "Website landing page ini dirancang untuk menampilkan keindahan dan profesionalitas dari layanan wedding organizer. Fokus utamanya adalah menciptakan kesan pertama yang romantis dan meyakinkan, agar calon pengantin merasa tertarik saat akses landing page.",
     image: Wedding,
     tags: ["Wedding", "Event", "Organizer"],
+  },
+  {
+    name: "RasaNusa Company Profile",
+    type: "Company Profile",
+    description:
+      "RasaNusa adalah brand kuliner modern yang menghadirkan cita rasa autentik Nusantara melalui hidangan restoran, paket catering, dan bumbu siap masak berkualitas premium.",
+    image: RasaNusa,
+    tags: ["Masakan Nusantara", "Kuliner", "Restaurant"],
   },
 ]
