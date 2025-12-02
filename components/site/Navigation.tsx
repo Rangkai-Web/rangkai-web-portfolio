@@ -123,7 +123,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             {mounted ? (
-              <Image src={(theme || "light") === "dark" ? LogoWhite : Logo} alt="Rangkai Web" width={96} height={96} className="" />
+              <Image src={resolvedTheme === "dark" ? LogoWhite : Logo} alt="Rangkai Web" width={96} height={96} className="" />
             ) : (
               <Image src={Logo} alt="Rangkai Web" width={96} height={96} className="" />
             )}
