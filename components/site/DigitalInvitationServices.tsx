@@ -27,14 +27,14 @@ const DigitalInvitationServices = () => {
   ]
 
   return (
-    <section id="digital-invitation" className="bg-white" aria-label="Layanan Undangan Digital">
+    <section id="digital-invitation" className="bg-white dark:bg-gray-900" aria-label="Layanan Undangan Digital">
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-16">
-          <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Layanan Undangan Digital</Badge>
-          <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4">
+          <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">Layanan Undangan Digital</Badge>
+          <h2 className="text-3xl lg:text-4xl text-gray-900 dark:text-white mb-4">
             Ahlinya Jasa Undangan Website
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Kami menawarkan Jasa Undangan Website untuk Pernikahan, Khitan, Ulang Tahun, Aqiqah dan Walimatussafar. Kami siap membuat undangan digital yang bukan hanya cantik, tapi juga fungsional.
           </p>
         </div>
@@ -45,13 +45,13 @@ const DigitalInvitationServices = () => {
             return (
               <div
                 key={index}
-                className="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-6 border border-orange-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-2"
+                className="bg-gradient-to-br from-orange-50 to-white dark:from-gray-800 dark:to-gray-700 rounded-2xl p-6 border border-orange-100 dark:border-gray-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-orange-500 to-orange-600 dark:from-orange-600 dark:to-orange-700 flex items-center justify-center mb-4">
                   <IconComponent className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                <p className="text-gray-600 text-sm">{feature.description}</p>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{feature.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300 text-sm">{feature.description}</p>
               </div>
             )
           })}

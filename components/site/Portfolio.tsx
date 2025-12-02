@@ -6,20 +6,20 @@ import { PORTOFOLIO } from "@/lib/portofolio"
 const Portfolio = () => {
 
   return (
-    <section id="portfolio" className="bg-white" aria-label="Portofolio">
+    <section id="portfolio" className="bg-white dark:bg-gray-900" aria-label="Portofolio">
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-8">
-          <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Portofolio</Badge>
-          <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4">Karya Terbaik Kami</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">Portofolio</Badge>
+          <h2 className="text-3xl lg:text-4xl text-gray-900 dark:text-white mb-4">Karya Terbaik Kami</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Lihat beberapa project website yang telah kami kerjakan untuk berbagai jenis bisnis
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {PORTOFOLIO.map((item, index) => (
-            <Card key={index} className="bg-gray-100 border border-gray-300 rounded-2xl group overflow-hidden shadow-2xl hover:-translate-y-2 transition-all duration-300">
-              <div className="bg-white relative overflow-hidden">
+            <Card key={index} className="bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-2xl group overflow-hidden shadow-2xl hover:-translate-y-2 transition-all duration-300">
+              <div className="bg-white dark:bg-gray-700 relative overflow-hidden">
                 <Image
                   src={item.image}
                   alt={item.name}
@@ -41,14 +41,14 @@ const Portfolio = () => {
               </div>
 
               <CardHeader>
-                <CardTitle className="text-xl font-medium">{item.name}</CardTitle>
-                <Badge variant="outline" className="w-fit bg-gradient-to-r from-orange-500 to-amber-500 text-white">
+                <CardTitle className="text-xl font-medium dark:text-white">{item.name}</CardTitle>
+                <Badge variant="outline" className="w-fit bg-gradient-to-r from-orange-500 to-amber-500 dark:from-orange-600 dark:to-amber-600 text-white">
                   {item.type}
                 </Badge>
               </CardHeader>
 
               <CardContent>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="text-gray-600 dark:text-gray-300">{item.description}</p>
               </CardContent>
             </Card>
           ))}

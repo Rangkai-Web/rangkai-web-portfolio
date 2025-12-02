@@ -39,14 +39,14 @@ const Services = () => {
   }, [api])
 
   return (
-    <section id="services" className="bg-[#F7F7F7]" aria-label="Paket Layanan Pembuatan Website">
+    <section id="services" className="bg-[#F7F7F7] dark:bg-gray-900" aria-label="Paket Layanan Pembuatan Website">
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-8 md:mb-0">
-          <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">Paket Layanan Pembuatan Website</Badge>
-          <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4">
+          <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">Paket Layanan Pembuatan Website</Badge>
+          <h2 className="text-3xl lg:text-4xl text-gray-900 dark:text-white mb-4">
             Pilih Paket Sesuai Kebutuhan Anda
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Dari UMKM hingga enterprise, kami memiliki solusi website yang tepat untuk setiap skala bisnis
           </p>
         </div>
@@ -64,8 +64,8 @@ const Services = () => {
               {PACKAGES.map((pkg, index) => (
                 <CarouselItem key={index} className="p-4 md:pr-8 basis:1/3 lg:basis-1/2 xl:basis-1/3">
                   <Card
-                    className={`relative rounded-2xl bg-white border-0 md:shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between h-full ${
-                      pkg.popular ? "ring-4 ring-orange-500" : ""
+                    className={`relative rounded-2xl bg-white dark:bg-gray-800 border-0 dark:border-gray-700 md:shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between h-full ${
+                      pkg.popular ? "ring-4 ring-orange-500 dark:ring-orange-600" : ""
                     }`}
                   >
                     {pkg.popular && (
@@ -85,17 +85,17 @@ const Services = () => {
                           {index === 3 && <Settings className="w-6 h-6 text-white" />}
                           {index === 4 && <Brain className="w-6 h-6 text-white" />}
                         </div>
-                        <CardTitle className="mb-4 text-lg font-medium px-3 py-1 bg-orange-100 text-orange-500 w-fit rounded-full">{pkg.name}</CardTitle>
-                        <div className="text-3xl text-gray-900">{pkg.price}</div>
-                        <CardDescription className="text-base">{pkg.description}</CardDescription>
+                        <CardTitle className="mb-4 text-lg font-medium px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-500 dark:text-orange-400 w-fit rounded-full">{pkg.name}</CardTitle>
+                        <div className="text-3xl text-gray-900 dark:text-white">{pkg.price}</div>
+                        <CardDescription className="text-base dark:text-gray-300">{pkg.description}</CardDescription>
                       </CardHeader>
 
                       <CardContent className="space-y-4">
                         <ul className="space-y-3">
                           {pkg.features.map((feature, featureIndex) => (
                             <li key={featureIndex} className="flex items-start space-x-3">
-                              <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 flex-shrink-0" />
-                              <span className="text-gray-700">{feature}</span>
+                              <CheckCircle className="w-5 h-5 text-orange-500 dark:text-orange-400 mt-0.5 flex-shrink-0" />
+                              <span className="text-gray-700 dark:text-gray-300">{feature}</span>
                             </li>
                           ))}
                         </ul>
@@ -123,8 +123,8 @@ const Services = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex" />
-            <CarouselNext className="hidden md:flex" />
+            <CarouselPrevious className="hidden md:flex bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700" />
+            <CarouselNext className="hidden md:flex bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700" />
           </Carousel>
 
           {/* Slide Indicators */}
@@ -133,7 +133,7 @@ const Services = () => {
               <button
                 key={index}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === current - 1 ? "bg-orange-500 w-8" : "bg-gray-300"
+                  index === current - 1 ? "bg-orange-500 dark:bg-orange-400 w-8" : "bg-gray-300 dark:bg-gray-600"
                 }`}
                 onClick={() => api?.scrollTo(index)}
               />

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import StructuredData from '@/components/structured-data'
 import GoogleAnalytics from '@/components/google-analytics'
+import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
   title: {
@@ -85,8 +86,27 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="id">
+    <html lang="id" suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const storageKey = 'rangkai-web-theme';
+                const storedTheme = localStorage.getItem(storageKey);
+                let theme = storedTheme || 'system';
+                
+                if (theme === 'system') {
+                  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  theme = systemPrefersDark ? 'dark' : 'light';
+                }
+                
+                document.documentElement.classList.remove('light', 'dark');
+                document.documentElement.classList.add(theme);
+              })();
+            `,
+          }}
+        />
         <link rel="icon" href="@/assets/others/favicon.png" type="image/png" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -96,8 +116,10 @@ export default function RootLayout({
         <GoogleAnalytics />
       </head>
       <body className="font-sans" style={{ fontFamily: 'Poppins' }}>
-        {children
-      }</body>
+        <ThemeProvider storageKey="rangkai-web-theme">
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

@@ -57,19 +57,19 @@ const items = [
 
 export function FAQ() {
   return (
-    <section id="faq" className="" aria-label="FAQ">
+    <section id="faq" className="bg-white dark:bg-gray-900" aria-label="FAQ">
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="flex flex-col items-center justify-center w-full mb-8">
-          <Badge className="text-orange-600 font-medium bg-orange-100 mb-4 text-base">FAQ</Badge>
-          <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4 text-center">Pertanyaan Umum Seputar Layanan <br/> <span className="bg-gradient-to-r from-orange-300 to-rangkai-primary bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">Rangkai Web</span></h2>
+          <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">FAQ</Badge>
+          <h2 className="text-3xl lg:text-4xl text-gray-900 dark:text-white mb-4 text-center">Pertanyaan Umum Seputar Layanan <br/> <span className="bg-gradient-to-r from-orange-300 to-rangkai-primary dark:from-orange-400 dark:to-orange-500 bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">Rangkai Web</span></h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           <Accordion type="single" collapsible className="w-full">
             {items.slice(0, Math.ceil(items.length / 2)).map((it, idx) => (
-              <AccordionItem key={idx} value={`item-${idx}`} className="">
-                <AccordionTrigger className="text-lg font-medium text-left cursor-pointer hover:text-orange-500 hover:no-underline">{it.q}</AccordionTrigger>
-                <AccordionContent className="text-gray-600 pl-3">
+              <AccordionItem key={idx} value={`item-${idx}`} className="border-gray-200 dark:border-gray-700">
+                <AccordionTrigger className="text-lg font-medium text-left cursor-pointer text-gray-900 dark:text-white hover:text-orange-500 dark:hover:text-orange-400 hover:no-underline">{it.q}</AccordionTrigger>
+                <AccordionContent className="text-gray-600 dark:text-gray-300 pl-3">
                   <div dangerouslySetInnerHTML={{ __html: it.a }} />
                 </AccordionContent>
               </AccordionItem>
@@ -77,9 +77,9 @@ export function FAQ() {
           </Accordion>
           <Accordion type="single" collapsible className="w-full">
             {items.slice(Math.ceil(items.length / 2)).map((it, idx) => (
-              <AccordionItem key={idx} value={`item-r-${idx}`}>
-                <AccordionTrigger className="text-lg font-medium text-left cursor-pointer hover:text-orange-500 hover:no-underline">{it.q}</AccordionTrigger>
-                <AccordionContent className="text-gray-600 pl-3">
+              <AccordionItem key={idx} value={`item-r-${idx}`} className="border-gray-200 dark:border-gray-700">
+                <AccordionTrigger className="text-lg font-medium text-left cursor-pointer text-gray-900 dark:text-white hover:text-orange-500 dark:hover:text-orange-400 hover:no-underline">{it.q}</AccordionTrigger>
+                <AccordionContent className="text-gray-600 dark:text-gray-300 pl-3">
                   <div dangerouslySetInnerHTML={{ __html: it.a }} />
                 </AccordionContent>
               </AccordionItem>

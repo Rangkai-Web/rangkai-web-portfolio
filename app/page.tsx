@@ -16,7 +16,7 @@ import Footer from "@/components/site/Footer"
 
 export default function RangkaiWebPortfolio() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Topbar */}
       <Topbar />
       
