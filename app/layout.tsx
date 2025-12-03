@@ -79,7 +79,12 @@ export const metadata: Metadata = {
     google: 'your-google-verification-code', // Replace with actual Google Search Console verification code
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.ico', type: 'image/x-icon' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
 }
 
@@ -111,6 +116,10 @@ export default function RootLayout({
           }}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
