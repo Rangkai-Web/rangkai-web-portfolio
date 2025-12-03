@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: 'Rangkai Web',
     images: [
       {
-        url: '/Logo-2.png',
+        url: '/Logo-2.webp',
         width: 1200,
         height: 630,
         alt: 'Rangkai Web - Jasa Pembuatan Website Profesional',
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Rangkai Web - Jasa Pembuatan Website Profesional & Terjangkau',
     description: 'Jasa pembuatan website profesional, landing page, toko online, dan website bisnis dengan harga terjangkau. Bantu bisnis Anda tampil online dan kredibel bersama Rangkai Web.',
-    images: ['@/assets/others/Logo-2.png'],
+    images: ['@/assets/others/Logo-2.webp'],
     creator: '@rangkaiweb',
   },
   robots: {
@@ -77,6 +77,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'your-google-verification-code', // Replace with actual Google Search Console verification code
+  },
+  icons: {
+    icon: '/favicon.ico',
   },
 }
 
@@ -107,7 +110,6 @@ export default function RootLayout({
             `,
           }}
         />
-        <link rel="icon" href="@/assets/others/favicon.png" type="image/png" />
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

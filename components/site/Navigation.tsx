@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import Logo from "@/assets/others/Logo-2.png"
-import LogoWhite from "@/assets/others/logo-white.png"
+import Logo from "@/assets/others/Logo-2.webp"
+import LogoWhite from "@/assets/others/logo-white.webp"
 import {
   Menu,
   X,
@@ -123,9 +123,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             {mounted ? (
-              <Image src={resolvedTheme === "dark" ? LogoWhite : Logo} alt="Rangkai Web" width={96} height={96} className="" />
+              <Image src={resolvedTheme === "dark" ? LogoWhite : Logo} alt="Rangkai Web" width={96} height={96} className="h-8 w-auto" />
             ) : (
-              <Image src={Logo} alt="Rangkai Web" width={96} height={96} className="" />
+              <Image src={Logo} alt="Rangkai Web" width={96} height={96} className="h-8 w-auto" />
             )}
             {/* <span className="text-xl font-medium text-black">Rangkai <span className="text-orange-500">Web</span></span> */}
           </div>

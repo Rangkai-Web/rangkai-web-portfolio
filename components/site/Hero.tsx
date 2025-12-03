@@ -5,9 +5,9 @@ import { ChevronLeft, ChevronRight, MessageCircle, ArrowRight, } from "lucide-re
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import Hero1 from "@/assets/hero/hero1.jpg";
-import Hero2 from "@/assets/hero/hero2.jpg";
-import Hero3 from "@/assets/hero/hero3.jpg";
+import Hero1 from "@/assets/hero/hero1.webp";
+import Hero2 from "@/assets/hero/hero2.webp";
+import Hero3 from "@/assets/hero/hero3.webp";
 
 const heroImages = [
   {

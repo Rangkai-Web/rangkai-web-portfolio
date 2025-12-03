@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Logo from "@/assets/others/logo-white.png"
+import Logo from "@/assets/others/logo-white.webp"
 import { Instagram, Mail, } from "lucide-react"
 import { FaTiktok, FaWhatsapp } from "react-icons/fa";
 

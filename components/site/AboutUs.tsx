@@ -1,7 +1,7 @@
 import React from 'react'
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
-import Woman from "@/assets/others/woman-holding-mac.jpeg"
+import Woman from "@/assets/others/woman-holding-mac.webp"
 
 const AboutUs = () => {
   return (

@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Quote, Star } from "lucide-react"
-import Teamwork from "@/assets/others/teamwork.jpg"
+import Teamwork from "@/assets/others/teamwork.webp"
 import Image from "next/image"
 import { useEffect, useState } from "react"
 import { CarouselApi, Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "../ui/carousel"
