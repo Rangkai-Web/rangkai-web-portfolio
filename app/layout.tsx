@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: 'Rangkai Web',
     images: [
       {
-        url: '/Logo-2.webp',
+        url: '/logo-rw.jpg',
         width: 1200,
         height: 630,
         alt: 'Rangkai Web - Jasa Pembuatan Website Profesional',
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Rangkai Web - Jasa Pembuatan Website Profesional & Terjangkau',
     description: 'Jasa pembuatan website profesional, landing page, toko online, dan website bisnis dengan harga terjangkau. Bantu bisnis Anda tampil online dan kredibel bersama Rangkai Web.',
-    images: ['@/assets/others/Logo-2.webp'],
+    images: ['/logo-rw.jpg'],
     creator: '@rangkaiweb',
   },
   robots: {
