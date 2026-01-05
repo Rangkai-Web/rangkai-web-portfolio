@@ -67,47 +67,6 @@ const Navigation = () => {
     return () => mediaQuery.removeEventListener('change', handleChange)
   }, [mounted, theme])
 
-  const toggleTheme = () => {
-    // Read current state directly from DOM to avoid stale state
-    if (typeof window === "undefined") return
-    
-    const html = document.documentElement
-    const isCurrentlyDark = html.classList.contains("dark")
-    const newResolvedTheme = isCurrentlyDark ? "light" : "dark"
-    const newTheme = newResolvedTheme // Store as explicit theme, not system
-    
-    // Update immediately
-    html.classList.remove("light", "dark")
-    html.classList.add(newResolvedTheme)
-    
-    // Update state
-    setResolvedTheme(newResolvedTheme)
-    setTheme(newTheme)
-  }
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["home", "about-us", "services", "digital-invitation", "portfolio", "testimonials", "contact"]
-      const scrollPosition = window.scrollY + 100
-
-      for (const section of sections) {
-        const element = document.getElementById(section)
-        if (element) {
-          const offsetTop = element.offsetTop
-          const offsetHeight = element.offsetHeight
-
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
-            setActiveSection(section)
-            break
-          }
-        }
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -208,17 +167,6 @@ const Navigation = () => {
           </button>
 
           <div className="hidden lg:flex items-center gap-3">
-            {mounted && (
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={toggleTheme}
-                className="text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400"
-                aria-label="Toggle dark mode"
-              >
-                {resolvedTheme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-              </Button>
-            )}
             <Button className="bg-rangkai-primary hover:bg-rangkai-primary/90 text-white animate-bounce" onClick={() => window.open(whatsappHref(), "_blank")}>
               <FaWhatsapp className="w-4 h-4" />
               WhatsApp
@@ -285,7 +233,7 @@ const Navigation = () => {
               </button>
             ))}
 
-            {mounted && (
+            {/* {mounted && (
               <div className="border-t border-gray-200 dark:border-gray-800 pt-2">
                 <button
                   onClick={toggleTheme}
@@ -305,7 +253,7 @@ const Navigation = () => {
                   )}
                 </button>
               </div>
-            )}
+            )} */}
           </div>
         )}
       </div>

@@ -52,7 +52,7 @@ const Portfolio = () => {
 
               <CardHeader>
                 <CardTitle className="text-xl font-medium dark:text-white">{item.name}</CardTitle>
-                <Badge variant="outline" className="w-fit bg-gradient-to-r from-orange-500 to-amber-500 dark:from-orange-600 dark:to-amber-600 text-white">
+                <Badge variant="default" className="w-fit bg-gradient-to-r from-orange-500 to-amber-500 dark:from-orange-600 dark:to-amber-600 text-white">
                   {item.type}
                 </Badge>
               </CardHeader>

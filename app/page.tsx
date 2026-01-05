@@ -18,7 +18,10 @@ export default function RangkaiWebPortfolio() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Topbar */}
-      <Topbar />
+      <Topbar
+        instagram={`https://instagram.com/rangkaiweb`}
+        tiktok={`https://tiktok.com/@rangkaiweb`}
+      />
       
       {/* Navigation */}
       <Navigation />
