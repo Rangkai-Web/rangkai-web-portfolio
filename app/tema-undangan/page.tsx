@@ -1,7 +1,7 @@
 "use client"
 
 import { Badge } from "@/components/ui/badge"
-import { Topbar } from "@/components/site/Topbar"
+// import { Topbar } from "@/components/site/Topbar"
 import { CardContent } from "@/components/ui/card"
 import { CardHeader } from "@/components/ui/card"
 import { CardTitle } from "@/components/ui/card"
@@ -14,10 +14,10 @@ export default function TemaUndangan() {
     return (
       <div className="min-h-screen bg-white dark:bg-gray-900">
           {/* Topbar */}
-          <Topbar
+          {/* <Topbar
             instagram={`https://instagram.com/invite.rangkaiweb`}
             tiktok={`https://tiktok.com/@invite.rangkaiweb`}
-          />
+          /> */}
 
           <div className="container mx-auto max-w-8xl px-8 md:px-24 py-14">
             <div className="text-center mb-8">
