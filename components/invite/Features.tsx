@@ -39,55 +39,55 @@ const features = [
     icon: Wallet,
     title: "Amplop Digital",
     description: "Tamu dapat memberikan amplop langsung secara digital.",
-    variant: "light"
+    variant: "dark"
   },
   {
     icon: MapPin,
     title: "Penunjuk Lokasi",
     description: "Dapat menunjukkan dan mengarahkan tamu ke lokasi acara.",
-    variant: "dark"
+    variant: "light"
   },
   {
     icon: Clock,
     title: "Hitungan Mundur",
     description: "Hitung mundur tanggal acara pernikahan.",
-    variant: "light"
+    variant: "dark"
   },
   {
     icon: Images,
     title: "Galeri Foto",
     description: "Tampilkan momen-momen indah dalam galeri foto yang elegan.",
-    variant: "dark"
+    variant: "light"
   },
   {
     icon: Music,
     title: "Background Musik",
     description: "Tambahkan musik latar untuk suasana yang lebih romantis.",
-    variant: "light"
+    variant: "dark"
   },
   {
     icon: Video,
     title: "Live Streaming",
     description: "Siarkan acara secara langsung untuk tamu yang tidak bisa hadir.",
-    variant: "dark"
+    variant: "light"
   },
   {
     icon: MessageSquareHeart,
     title: "Doa & Ucapan",
     description: "Terima doa dan ucapan dari para tamu undangan.",
-    variant: "light"
+    variant: "dark"
   },
   {
     icon: Heart,
     title: "Love Stories",
     description: "Ceritakan kisah cinta kalian yang romantis dan menyentuh hati.",
-    variant: "dark"
+    variant: "light"
   },
   {
     icon: ShieldCheck,
     title: "Protokol Kesehatan",
     description: "Informasikan protokol kesehatan untuk keamanan bersama.",
-    variant: "light"
+    variant: "dark"
   },
 ];
 
