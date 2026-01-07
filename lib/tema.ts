@@ -1,11 +1,11 @@
 // import D2C from "@/assets/tema/basic/1.webp"
 
 export const TEMA_TYPE = [
-  "basic",
-  "premium",
-  "aqiqah",
-  "birthday",
-];
+  { value: 'basic' as const, label: 'Basic' },
+  { value: 'premium' as const, label: 'Premium' },
+  { value: 'aqiqah' as const, label: 'Aqiqah' },
+  { value: 'birthday' as const, label: 'Birthday' },
+]
 
 export const TEMA = [
   {
