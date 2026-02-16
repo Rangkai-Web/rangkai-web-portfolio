@@ -9,8 +9,26 @@ import SmpIPK from "@/assets/portofolio/smpipk.webp"
 import Pelabuhan from "@/assets/portofolio/pelabuhan.webp"
 import MiningGold from "@/assets/portofolio/mining-gold-min.webp"
 import RasaNusa from "@/assets/portofolio/RasaNusa.webp"
+import AsihAngger from "@/assets/portofolio/aa1.webp"
+import MasterStudio from "@/assets/portofolio/ms2.webp"
 
 export const PORTOFOLIO = [
+  {
+    name: "Master Studio",
+    type: "Landing Page",
+    description:
+      "Website portfolio Jasa Fotografi Master Studio yang berlokasi di Cikampek, Karawang, Jawa Barat. Website ini dirancang untuk memperlihatkan profesionalitas dan kualitas layanan fotografi yang ditawarkan oleh Master Studio.",
+    image: MasterStudio,
+    tags: ["Fotografi", "Jasa Fotografi", "Portfolio"],
+  },
+  {
+    name: "Asih Angger",
+    type: "Landing Page",
+    description:
+      "Website portfolio Jasa Fotografi Asih Angger. Website ini dibangun untuk meningkatkan visibilitas dan kredibilitas Asih Angger sebagai fotografer profesional.",
+    image: AsihAngger,
+    tags: ["Fotografi", "Jasa Fotografi", "Portfolio"],
+  },
   {
     name: "Nicofaart Woodwork",
     type: "Landing Page",
