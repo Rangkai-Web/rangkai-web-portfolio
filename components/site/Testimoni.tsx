@@ -67,7 +67,7 @@ const Testimoni = () => {
           >
             <CarouselContent className="-ml-2 md:-ml-4 py-0 md:py-10">
               {currentTestimonials.map((testimonialItem, index) => (
-                <CarouselItem key={testimonialItem.name} className="pb-10 px-2 md:px-4 basis:1/3 lg:basis-1/2 xl:basis-1/3">
+                <CarouselItem key={testimonialItem.name} className="pb-10 px-2 md:px-4 basis-full lg:basis-1/2 xl:basis-1/3">
                   <div className="bg-white/80 dark:bg-gray-800/90 rounded-2xl border border-white dark:border-gray-700 p-6 shadow-xl hover:-translate-y-2 transition-all duration-300 h-full flex justify-items-start items-center flex-col gap-4">
                     <Quote className="size-16 text-orange-500 dark:text-orange-400" aria-hidden />
                     <h3 className="font-medium text-2xl dark:text-white">{testimonialItem.name}</h3>

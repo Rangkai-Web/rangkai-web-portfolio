@@ -66,7 +66,7 @@ const Services = () => {
           >
             <CarouselContent className="-ml-2 md:-ml-4 md:py-12">
               {currentPackages.map((pkg, index) => (
-                <CarouselItem key={index} className="p-4 md:pr-8 basis:1/3 lg:basis-1/2 xl:basis-1/3">
+                <CarouselItem key={index} className="p-4 md:pr-8 basis-full lg:basis-1/2 xl:basis-1/3">
                   <Card
                     className={`relative rounded-2xl bg-white dark:bg-gray-800 border-0 dark:border-gray-700 md:shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between h-full ${
                       pkg.popular ? "ring-4 ring-orange-500 dark:ring-orange-600" : ""

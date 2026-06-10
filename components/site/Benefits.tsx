@@ -61,7 +61,7 @@ export function Benefits() {
           >
             <CarouselContent className="-ml-2 md:-ml-4 py-0 md:py-10">
               {currentBenefits.map((b, index) => (
-                <CarouselItem key={index} className="pb-10 px-2 md:px-4 basis-1/3 md:basis-1/2 xl:basis-1/3">
+                <CarouselItem key={index} className="pb-10 px-2 md:px-4 basis-full md:basis-1/2 xl:basis-1/3">
                   <div className="bg-white dark:bg-gray-800 rounded-2xl border border-white dark:border-gray-700 p-6 shadow-xl hover:-translate-y-2 transition-all duration-300 h-full flex justify-items-start items-center flex-col gap-4">
                     <b.icon className="size-16 text-orange-500 dark:text-orange-400" aria-hidden />
                     <h3 className="font-medium text-2xl dark:text-white">{b.title}</h3>
