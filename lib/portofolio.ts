@@ -1,18 +1,54 @@
-import GayaKitaStore from "@/assets/portofolio/GayaKitaStore.webp"
-import Nicofaart from "@/assets/portofolio/nicofaart.webp"
-import SmartClean from "@/assets/portofolio/SmartClean.webp"
-import Wedding from "@/assets/portofolio/wedding.webp"
-import D2C from "@/assets/portofolio/d2c.webp"
-import Dukcapil from "@/assets/portofolio/dukcapil.webp"
-import Lazcoal from "@/assets/portofolio/lazcoal.webp"
-import SmpIPK from "@/assets/portofolio/smpipk.webp"
-import Pelabuhan from "@/assets/portofolio/pelabuhan.webp"
-import MiningGold from "@/assets/portofolio/mining-gold-min.webp"
-import RasaNusa from "@/assets/portofolio/RasaNusa.webp"
-import AsihAngger from "@/assets/portofolio/aa1.webp"
-import MasterStudio from "@/assets/portofolio/ms2.webp"
+import GayaKitaStore from "@/assets/portofolio/GayaKitaStore.webp";
+import Nicofaart from "@/assets/portofolio/nicofaart.webp";
+import SmartClean from "@/assets/portofolio/SmartClean.webp";
+import Wedding from "@/assets/portofolio/wedding.webp";
+import D2C from "@/assets/portofolio/d2c.webp";
+import Dukcapil from "@/assets/portofolio/dukcapil.webp";
+import Lazcoal from "@/assets/portofolio/lazcoal.webp";
+import SmpIPK from "@/assets/portofolio/smpipk.webp";
+import Pelabuhan from "@/assets/portofolio/pelabuhan.webp";
+import MiningGold from "@/assets/portofolio/mining-gold-min.webp";
+import RasaNusa from "@/assets/portofolio/RasaNusa.webp";
+import AsihAngger from "@/assets/portofolio/aa1.webp";
+import MasterStudio from "@/assets/portofolio/ms2.webp";
+import DknDigital from "@/assets/portofolio/dkn.webp";
+import NilEntertainment from "@/assets/portofolio/nil.webp";
+import Promos from "@/assets/portofolio/promos.webp";
+import Sentraoto from "@/assets/portofolio/sentraoto.webp";
 
 export const PORTOFOLIO = [
+  {
+    name: "Dealer Sentraoto",
+    type: "Website Jual Beli Kendaraan",
+    description:
+      "Website Sentraoto adalah platform jual beli kendaraan yang memudahkan pengguna untuk mencari dan membeli kendaraan impian mereka. Dengan tampilan yang modern dan user-friendly, Sentraoto menyediakan berbagai pilihan kendaraan dengan informasi yang lengkap dan terpercaya.",
+    image: Sentraoto,
+    tags: ["Jual Beli Kendaraan", "Vehicle", "Auction"],
+  },
+  {
+    name: "Procurement Monitoring System",
+    type: "Website Custom",
+    description:
+      "Sistem berbasis website untuk membantu pengelolaan data dan aktivitas procurement secara efisien. Sistem ini menampilkan berbagai informasi penting seperti dashboard aktivitas, laporan, dokumen, hingga data operasional dalam satu platform.",
+    image: Promos,
+    tags: ["Procurement", "Monitoring", "Inventory"],
+  },
+  {
+    name: "DKN Digital",
+    type: "Company Profile",
+    description:
+      "Website company profile ini dibangun untuk menampilkan profesionalitas dan kapabilitas perusahaan digital yang membantu untuk pelatihan dan kursus secara online.",
+    image: DknDigital,
+    tags: ["Training", "Digital", "Online Course"],
+  },
+  {
+    name: "Nil Entertainment",
+    type: "Landing Page",
+    description:
+      "Website Jasa Photobooth & Videobooth dari Bali. Website ini dirancang untuk menampilkan profesionalitas dan kualitas layanan event organizer yang ditawarkan oleh Nil Entertainment.",
+    image: NilEntertainment,
+    tags: ["Photobooth", "Videobooth", "Event"],
+  },
   {
     name: "Master Studio",
     type: "Landing Page",
@@ -32,7 +68,8 @@ export const PORTOFOLIO = [
   {
     name: "Nicofaart Woodwork",
     type: "Landing Page",
-    description: "Website landing page untuk produsen furniture asli Jepara yang menunjukkan kualitas premium dan desain elegan. Dibuat untuk memperkuat branding Nicofaart Woodwork sebagai penyedia furniture berkualitas tinggi yang dikerjakan oleh tukang kayu profesional Jepara.",
+    description:
+      "Website landing page untuk produsen furniture asli Jepara yang menunjukkan kualitas premium dan desain elegan. Dibuat untuk memperkuat branding Nicofaart Woodwork sebagai penyedia furniture berkualitas tinggi yang dikerjakan oleh tukang kayu profesional Jepara.",
     image: Nicofaart,
     tags: ["Furniture"],
   },
@@ -116,4 +153,4 @@ export const PORTOFOLIO = [
     image: RasaNusa,
     tags: ["Masakan Nusantara", "Kuliner", "Restaurant"],
   },
-]
+];
