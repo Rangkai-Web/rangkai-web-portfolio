@@ -5,6 +5,7 @@ import { ChevronLeft, ChevronRight, MessageCircle, ArrowRight, } from "lucide-re
 import Image from "next/image";
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { useLanguage } from "@/components/language-provider";
 import Hero1 from "@/assets/hero/hero1.webp";
 import Hero2 from "@/assets/hero/hero2.webp";
 import Hero3 from "@/assets/hero/hero3.webp";
@@ -27,6 +28,7 @@ const heroImages = [
 export function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [activeSection, setActiveSection] = useState("home")
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -130,16 +132,16 @@ export function HeroSection() {
       <div className="absolute inset-0 container mx-auto max-w-7xl p-8 lg:px-24 xl:px-28 flex">
         <div className="flex flex-col justify-center items-start gap-4 text-white pt-[env(safe-area-inset-top,3rem)] md:pt-0">
           <Badge className="w-fit text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 text-base">
-            Solusi Tepat di Era Digital
+            {t('hero.badge')}
           </Badge>
           <h1 className="text-3xl sm:text-4xl lg:text-6xl text-white leading-tight">
-            Jasa Pembuatan Website <br/>
+            {t('hero.titleStart')} <br/>
             <span className="bg-gradient-to-r from-orange-300 to-rangkai-primary bg-clip-text text-transparent [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-              Profesional & Terpercaya
+              {t('hero.titleHighlight')}
             </span>
           </h1>
           <p className="text-lg sm:text-xl text-white leading-relaxed mb-4">
-            Dapatkan solusi untuk membantu bisnis tampil modern dan kredibel melalui website yang cepat dan fungsional
+            {t('hero.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 relative z-20">
             <Button
@@ -147,7 +149,7 @@ export function HeroSection() {
               className="bg-gradient-to-r from-orange-300 to-rangkai-primary hover:from-rangkai-primary hover:to-orange-300 relative z-20"
               onClick={() => scrollToSection("services")}
             >
-              Lihat Paket Layanan
+              {t('hero.viewServices')}
               <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
             <Button
@@ -156,7 +158,7 @@ export function HeroSection() {
               onClick={() => window.open("https://wa.me/62882005225421", "_blank")}
             >
               <MessageCircle className="mr-2 w-4 h-4" />
-              Konsultasi Gratis
+              {t('hero.freeConsultation')}
             </Button>
           </div>
         </div>

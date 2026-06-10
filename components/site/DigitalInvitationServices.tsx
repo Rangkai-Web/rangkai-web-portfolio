@@ -1,41 +1,44 @@
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Gift, Music, Heart, Camera, MapPin, Calendar, Users } from "lucide-react"
+import { useLanguage } from "@/components/language-provider"
 
 const DigitalInvitationServices = () => {
+  const { t } = useLanguage()
+
   const features = [
     {
       icon: Gift,
-      title: "Beragam Pilihan Tema",
-      description: "Kami menyediakan banyak pilihan tema untuk undangan online yang bisa langsung Anda gunakan atau sesuaikan sesuai kebutuhan Anda."
+      title: t("digitalInvitation.features.themes.title"),
+      description: t("digitalInvitation.features.themes.desc")
     },
     {
       icon: Music,
-      title: "Fitur Lengkap dan Interaktif",
-      description: "Tampilkan informasi lengkap acara seperti peta, countdown, galeri, backsound musik, serta doa dan ucapan langsung dari tamu undangan."
+      title: t("digitalInvitation.features.features.title"),
+      description: t("digitalInvitation.features.features.desc")
     },
     {
       icon: Users,
-      title: "Undangan Tanpa Batas",
-      description: "Sebar undangan ke tamu sebanyak mungkin tanpa batas. Jangkau lebih banyak orang tanpa khawatir ada yang tak kebagian undangan Anda."
+      title: t("digitalInvitation.features.invites.title"),
+      description: t("digitalInvitation.features.invites.desc")
     },
     {
       icon: Calendar,
-      title: "Kirim Undangan Instan",
-      description: "Bagikan undangan digital dengan cepat dan mudah lewat WhatsApp ke kontak yang Anda miliki. Undangan bisa langsung diterima dan dibaca oleh tamu undangan."
+      title: t("digitalInvitation.features.instant.title"),
+      description: t("digitalInvitation.features.instant.desc")
     }
   ]
 
   return (
-    <section id="digital-invitation" className="bg-white dark:bg-gray-900" aria-label="Layanan Undangan Digital">
+    <section id="digital-invitation" className="bg-white dark:bg-gray-900" aria-label={t("digitalInvitation.badge")}>
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-16">
-          <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">Layanan Undangan Digital</Badge>
+          <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">{t("digitalInvitation.badge")}</Badge>
           <h2 className="text-3xl lg:text-4xl text-gray-900 dark:text-white mb-4">
-            Ahlinya Jasa Undangan Website
+            {t("digitalInvitation.title")}
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Kami menawarkan Jasa Undangan Website untuk Pernikahan, Khitan, Ulang Tahun, Aqiqah dan Walimatussafar. Kami siap membuat undangan digital yang bukan hanya cantik, tapi juga fungsional.
+            {t("digitalInvitation.subtitle")}
           </p>
         </div>
 
@@ -63,7 +66,7 @@ const DigitalInvitationServices = () => {
             onClick={() => window.open("https://invite.rangkaiweb.com/", "_blank")}
           >
             <ExternalLink className="w-5 h-5 mr-2" />
-            Lihat Tema Undangan
+            {t("digitalInvitation.btnText")}
           </Button>
         </div>
       </div>

@@ -19,9 +19,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu"
+import { useLanguage } from "@/components/language-provider"
 
 const Navigation = () => {
   const { theme, setTheme } = useTheme()
+  const { language, setLanguage, t } = useLanguage()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState("home")
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false)
@@ -102,8 +104,8 @@ const Navigation = () => {
                 }`}
               >
                 {item === "home"
-                  ? "Beranda"
-                  : "Tentang Kami"}
+                  ? t("nav.home")
+                  : t("nav.aboutUs")}
               </button>
             ))}
             
@@ -116,7 +118,7 @@ const Navigation = () => {
                       : "text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400"
                   }`}
                 >
-                  Layanan
+                  {t("nav.services")}
                   <ChevronDown className="w-4 h-4" />
                 </button>
               </DropdownMenuTrigger>
@@ -128,7 +130,7 @@ const Navigation = () => {
                   }}
                   className="cursor-pointer hover:bg-orange-500 dark:hover:bg-orange-600 hover:text-white rounded-md"
                 >
-                  Website Development
+                  {t("nav.webDev")}
                 </DropdownMenuItem>
                 <DropdownMenuItem
                   onClick={() => {
@@ -137,7 +139,7 @@ const Navigation = () => {
                   }}
                   className="cursor-pointer hover:bg-orange-500 dark:hover:bg-orange-600 hover:text-white rounded-md"
                 >
-                  Undangan Digital
+                  {t("nav.digitalInvitation")}
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -153,10 +155,10 @@ const Navigation = () => {
                 }`}
               >
                 {item === "portfolio"
-                  ? "Portofolio"
+                  ? t("nav.portfolio")
                   : item === "testimonials"
-                    ? "Testimoni"
-                    : "Kontak"}
+                    ? t("nav.testimonials")
+                    : t("nav.contact")}
               </button>
             ))}
           </div>
@@ -169,7 +171,7 @@ const Navigation = () => {
           <div className="hidden lg:flex items-center gap-3">
             <Button className="bg-rangkai-primary hover:bg-rangkai-primary/90 text-white animate-bounce" onClick={() => window.open(whatsappHref(), "_blank")}>
               <FaWhatsapp className="w-4 h-4" />
-              WhatsApp
+              {t("nav.whatsapp")}
             </Button>
           </div>
         </div>
@@ -184,8 +186,8 @@ const Navigation = () => {
                 className="block w-full text-left py-2 px-4 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-900/20 capitalize cursor-pointer transition-colors"
               >
                 {item === "home"
-                  ? "Beranda"
-                  : "Tentang Kami"}
+                  ? t("nav.home")
+                  : t("nav.aboutUs")}
               </button>
             ))}
             
@@ -194,7 +196,7 @@ const Navigation = () => {
                 onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
                 className="flex items-center justify-between w-full text-left py-2 px-4 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-900/20 cursor-pointer transition-colors"
               >
-                <span className="font-medium">Layanan</span>
+                <span className="font-medium">{t("nav.services")}</span>
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-200 ${
                     isMobileServicesOpen ? "rotate-180" : ""
@@ -207,13 +209,13 @@ const Navigation = () => {
                     onClick={() => scrollToSection("services")}
                     className="block w-full text-left py-2 px-8 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-100 dark:hover:bg-orange-900/30 cursor-pointer transition-colors"
                   >
-                    Website Development
+                    {t("nav.webDev")}
                   </button>
                   <button
                     onClick={() => scrollToSection("digital-invitation")}
                     className="block w-full text-left py-2 px-8 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-100 dark:hover:bg-orange-900/30 cursor-pointer transition-colors"
                   >
-                    Undangan Digital
+                    {t("nav.digitalInvitation")}
                   </button>
                 </div>
               )}
@@ -226,34 +228,48 @@ const Navigation = () => {
                 className="block w-full text-left py-2 px-4 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-900/20 capitalize cursor-pointer transition-colors"
               >
                 {item === "portfolio"
-                  ? "Portofolio"
+                  ? t("nav.portfolio")
                   : item === "testimonials"
-                    ? "Testimoni"
-                    : "Kontak"}
+                    ? t("nav.testimonials")
+                    : t("nav.contact")}
               </button>
             ))}
 
-            {/* {mounted && (
-              <div className="border-t border-gray-200 dark:border-gray-800 pt-2">
-                <button
-                  onClick={toggleTheme}
-                  className="flex items-center gap-2 w-full text-left py-2 px-4 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-900/20 cursor-pointer transition-colors"
-                  aria-label="Toggle dark mode"
-                >
-                  {resolvedTheme === "dark" ? (
-                    <>
-                      <Sun className="w-5 h-5" />
-                      <span>Darkmode</span>
-                    </>
-                  ) : (
-                    <>
-                      <Moon className="w-5 h-5" />
-                      <span>Lightmode</span>
-                    </>
-                  )}
-                </button>
+            {mounted && (
+              <div className="border-t border-gray-200 dark:border-gray-800 pt-4 px-4 flex flex-col gap-2">
+                <span className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider">
+                  {language === 'id' ? 'Ubah Bahasa' : 'Change Language'}
+                </span>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => {
+                      setLanguage('id')
+                      setIsMenuOpen(false)
+                    }}
+                    className={`flex-1 py-2 px-3 text-center text-sm font-medium rounded-lg border transition-all ${
+                      language === 'id'
+                        ? 'border-orange-500 bg-orange-500 text-white dark:border-orange-600 dark:bg-orange-600'
+                        : 'border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-800'
+                    }`}
+                  >
+                    Bahasa Indonesia
+                  </button>
+                  <button
+                    onClick={() => {
+                      setLanguage('en')
+                      setIsMenuOpen(false)
+                    }}
+                    className={`flex-1 py-2 px-3 text-center text-sm font-medium rounded-lg border transition-all ${
+                      language === 'en'
+                        ? 'border-orange-500 bg-orange-500 text-white dark:border-orange-600 dark:bg-orange-600'
+                        : 'border-gray-200 dark:border-gray-800 text-gray-600 dark:text-gray-300 bg-white dark:bg-gray-800'
+                    }`}
+                  >
+                    English
+                  </button>
+                </div>
               </div>
-            )} */}
+            )}
           </div>
         )}
       </div>

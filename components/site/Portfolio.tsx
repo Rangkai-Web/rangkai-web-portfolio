@@ -6,23 +6,26 @@ import { Badge } from "@/components/ui/badge"
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import Image from "next/image"
 import { PORTOFOLIO } from "@/lib/portofolio"
+import { useLanguage } from "@/components/language-provider"
 
 const Portfolio = () => {
   const [selectedImage, setSelectedImage] = useState<{ src: any; alt: string; name?: string; description?: string } | null>(null)
+  const { language, t } = useLanguage()
+  const currentPortfolios = PORTOFOLIO[language] || PORTOFOLIO.id
 
   return (
-    <section id="portfolio" className="bg-white dark:bg-gray-900" aria-label="Portofolio">
+    <section id="portfolio" className="bg-white dark:bg-gray-900" aria-label={t('portfolio.badge')}>
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-8">
-          <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">Portofolio</Badge>
-          <h2 className="text-3xl lg:text-4xl text-gray-900 dark:text-white mb-4">Karya Terbaik Kami</h2>
+          <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">{t('portfolio.badge')}</Badge>
+          <h2 className="text-3xl lg:text-4xl text-gray-900 dark:text-white mb-4">{t('portfolio.title')}</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Lihat beberapa project website yang telah kami kerjakan untuk berbagai jenis bisnis
+            {t('portfolio.subtitle')}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-          {PORTOFOLIO.map((item, index) => (
+          {currentPortfolios.map((item, index) => (
             <Card key={index} className="bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-2xl group overflow-hidden shadow-2xl hover:-translate-y-2 transition-all duration-300">
               <div className="bg-white dark:bg-gray-700 relative overflow-hidden">
                 <div 

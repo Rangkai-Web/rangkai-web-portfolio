@@ -20,10 +20,14 @@ import {
 import { PACKAGES } from "@/lib/packages"
 import { CONTACT, whatsappHref } from "@/lib/site"
 import { useState, useEffect } from "react"
+import { useLanguage } from "@/components/language-provider"
+
 const Services = () => {
   const [api, setApi] = useState<CarouselApi>()
   const [current, setCurrent] = useState(0)
   const [count, setCount] = useState(0)
+  const { language, t } = useLanguage()
+  const currentPackages = PACKAGES[language] || PACKAGES.id
 
   useEffect(() => {
     if (!api) {
@@ -39,15 +43,15 @@ const Services = () => {
   }, [api])
 
   return (
-    <section id="services" className="bg-[#F7F7F7] dark:bg-gray-900" aria-label="Paket Layanan Pembuatan Website">
+    <section id="services" className="bg-[#F7F7F7] dark:bg-gray-900" aria-label={t('services.badge')}>
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-8 md:mb-0">
-          <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">Paket Layanan Pembuatan Website</Badge>
+          <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">{t('services.badge')}</Badge>
           <h2 className="text-3xl lg:text-4xl text-gray-900 dark:text-white mb-4">
-            Pilih Paket Sesuai Kebutuhan Anda
+            {t('services.title')}
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Dari UMKM hingga enterprise, kami memiliki solusi website yang tepat untuk setiap skala bisnis
+            {t('services.subtitle')}
           </p>
         </div>
 
@@ -61,7 +65,7 @@ const Services = () => {
             }}
           >
             <CarouselContent className="-ml-2 md:-ml-4 md:py-12">
-              {PACKAGES.map((pkg, index) => (
+              {currentPackages.map((pkg, index) => (
                 <CarouselItem key={index} className="p-4 md:pr-8 basis:1/3 lg:basis-1/2 xl:basis-1/3">
                   <Card
                     className={`relative rounded-2xl bg-white dark:bg-gray-800 border-0 dark:border-gray-700 md:shadow-xl overflow-hidden transition-all duration-300 hover:-translate-y-2 flex flex-col justify-between h-full ${
@@ -70,7 +74,7 @@ const Services = () => {
                   >
                     {pkg.popular && (
                       <div className="absolute top-0 right-0 bg-gradient-to-r from-orange-500 to-amber-500 text-white px-3 py-1 text-sm font-medium">
-                        Terpopuler
+                        {t('services.popular')}
                       </div>
                     )}
 
@@ -106,17 +110,15 @@ const Services = () => {
                       <Button
                         className={`w-full text-white bg-gradient-to-r from-orange-500 to-orange-600 hover:opacity-90`}
                         onClick={() => {
-                          const waNumber = CONTACT.whatsapp
-                          const text =
-                            `Halo, saya tertarik dengan paket website berikut:\n` +
-                            `Paket: ${pkg.name}\n` +
-                            `Harga: ${pkg.price}\n` +
-                            `Deskripsi: ${pkg.description}`
+                          const isId = language === 'id'
+                          const text = isId
+                            ? `Halo, saya tertarik dengan paket website berikut:\nPaket: ${pkg.name}\nHarga: ${pkg.price}\nDeskripsi: ${pkg.description}`
+                            : `Hello, I am interested in the following website package:\nPackage: ${pkg.name}\nPrice: ${pkg.price}\nDescription: ${pkg.description}`
                           const waUrl = whatsappHref(`${text}`)
                           window.open(waUrl, "_blank")
                         }}
                       >
-                        Pilih Paket Ini
+                        {t('services.choosePackage')}
                       </Button>
                     </CardFooter>
                   </Card>

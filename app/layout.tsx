@@ -3,6 +3,7 @@ import './globals.css'
 import StructuredData from '@/components/structured-data'
 import GoogleAnalytics from '@/components/google-analytics'
 import { ThemeProvider } from '@/components/theme-provider'
+import { LanguageProvider } from '@/components/language-provider'
 
 export const metadata: Metadata = {
   title: {
@@ -127,9 +128,11 @@ export default function RootLayout({
         <GoogleAnalytics />
       </head>
       <body className="font-sans" style={{ fontFamily: 'Poppins' }}>
-        <ThemeProvider storageKey="rangkai-web-theme">
-          {children}
-        </ThemeProvider>
+        <LanguageProvider>
+          <ThemeProvider storageKey="rangkai-web-theme">
+            {children}
+          </ThemeProvider>
+        </LanguageProvider>
       </body>
     </html>
   )

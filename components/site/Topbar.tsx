@@ -5,9 +5,11 @@ import { CONTACT } from "@/lib/site"
 import { Instagram, Mail, Moon, Sun, } from "lucide-react"
 import { FaTiktok } from "react-icons/fa"
 import { Button } from "../ui/button"
+import { useLanguage } from "@/components/language-provider"
 
 export function Topbar({ instagram, tiktok }: { instagram: string, tiktok: string }) {
   const { theme, setTheme } = useTheme()
+  const { language, setLanguage } = useLanguage()
   const [activeSection, setActiveSection] = useState("home")
   const [mounted, setMounted] = useState(false)
   const [resolvedTheme, setResolvedTheme] = useState<string>("light")
@@ -96,9 +98,37 @@ export function Topbar({ instagram, tiktok }: { instagram: string, tiktok: strin
       <div className="mx-auto px-6 py-2 text-sm flex items-center justify-between">
         <p className="text-balance flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 dark:hover:text-orange-400 transition-colors">
           <Mail className="w-4 h-4" />
-          <a href={`mailto:${CONTACT.email}`} target="_blank">{CONTACT.email}</a>
+          <a href={`mailto:${CONTACT.email}`} target="_blank" className="hidden xs:inline">{CONTACT.email}</a>
         </p>
-        <div className="flex items-center gap-4 text-gray-700 dark:text-gray-300">
+        <div className="flex items-center gap-2 sm:gap-4 text-gray-700 dark:text-gray-300">
+          {mounted && (
+            <div className="flex items-center gap-1.5 text-xs font-semibold select-none border-r border-gray-300 dark:border-gray-700 pr-2 sm:pr-4">
+              <button
+                onClick={() => setLanguage('id')}
+                className={`transition-colors cursor-pointer py-0.5 px-1 rounded ${
+                  language === 'id'
+                    ? 'text-orange-600 dark:text-orange-400 font-bold bg-orange-100 dark:bg-orange-900/30'
+                    : 'text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 font-medium'
+                }`}
+                aria-label="Bahasa Indonesia"
+              >
+                ID
+              </button>
+              <span className="text-gray-300 dark:text-gray-600">/</span>
+              <button
+                onClick={() => setLanguage('en')}
+                className={`transition-colors cursor-pointer py-0.5 px-1 rounded ${
+                  language === 'en'
+                    ? 'text-orange-600 dark:text-orange-400 font-bold bg-orange-100 dark:bg-orange-900/30'
+                    : 'text-gray-500 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 font-medium'
+                }`}
+                aria-label="English"
+              >
+                EN
+              </button>
+            </div>
+          )}
+
           {mounted && (
             <Button
               variant="ghost"
