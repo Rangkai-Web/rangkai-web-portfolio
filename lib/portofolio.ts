@@ -17,14 +17,15 @@ import Promos from "@/assets/portofolio/promos.webp";
 import Sentraoto from "@/assets/portofolio/sentraoto.webp";
 
 export type PortfolioItem = {
-  name: string
-  type: string
-  description: string
-  image: any
-  tags: string[]
-}
+  name: string;
+  type: string;
+  description: string;
+  image: any;
+  tags: string[];
+  link?: string;
+};
 
-export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
+export const PORTOFOLIO: Record<"id" | "en", PortfolioItem[]> = {
   id: [
     {
       name: "Dealer Sentraoto",
@@ -33,6 +34,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Website Sentraoto adalah platform jual beli kendaraan yang memudahkan pengguna untuk mencari dan membeli kendaraan impian mereka. Dengan tampilan yang modern dan user-friendly, Sentraoto menyediakan berbagai pilihan kendaraan dengan informasi yang lengkap dan terpercaya.",
       image: Sentraoto,
       tags: ["Jual Beli Kendaraan", "Vehicle", "Auction"],
+      link: "https://sentraoto.com",
     },
     {
       name: "Procurement Monitoring System",
@@ -49,6 +51,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Website company profile ini dibangun untuk menampilkan profesionalitas dan kapabilitas perusahaan digital yang membantu untuk pelatihan dan kursus secara online.",
       image: DknDigital,
       tags: ["Training", "Digital", "Online Course"],
+      link: "https://dkn.digital/",
     },
     {
       name: "Nil Entertainment",
@@ -57,6 +60,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Website Jasa Photobooth & Videobooth dari Bali. Website ini dirancang untuk menampilkan profesionalitas dan kualitas layanan event organizer yang ditawarkan oleh Nil Entertainment.",
       image: NilEntertainment,
       tags: ["Photobooth", "Videobooth", "Event"],
+      link: "https://nilphotoboothbali.com/",
     },
     {
       name: "Master Studio",
@@ -65,6 +69,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Website portfolio Jasa Fotografi Master Studio yang berlokasi di Cikampek, Karawang, Jawa Barat. Website ini dirancang untuk memperlihatkan profesionalitas dan kualitas layanan fotografi yang ditawarkan oleh Master Studio.",
       image: MasterStudio,
       tags: ["Fotografi", "Jasa Fotografi", "Portfolio"],
+      link: "https://masterstudio-idn.com/",
     },
     {
       name: "Asih Angger",
@@ -73,6 +78,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Website portfolio Jasa Fotografi Asih Angger. Website ini dibangun untuk meningkatkan visibilitas dan kredibilitas Asih Angger sebagai fotografer profesional.",
       image: AsihAngger,
       tags: ["Fotografi", "Jasa Fotografi", "Portfolio"],
+      link: "https://asihanggerfotografi.com/",
     },
     {
       name: "Nicofaart Woodwork",
@@ -81,6 +87,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Website landing page untuk produsen furniture asli Jepara yang menunjukkan kualitas premium dan desain elegan. Dibuat untuk memperkuat branding Nicofaart Woodwork sebagai penyedia furniture berkualitas tinggi yang dikerjakan oleh tukang kayu profesional Jepara.",
       image: Nicofaart,
       tags: ["Furniture"],
+      link: "https://nicofaart.com/",
     },
     {
       name: "SMPI-PK Muhammadiyah Delanggu Klaten",
@@ -89,6 +96,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Website sekolah yang dikembangkan untuk menampilkan informasi seputar kegiatan akademik, berita, serta galeri siswa. Memudahkan pihak sekolah dalam menyebarkan informasi artikel atau berita tentang sekolah tersebut.",
       image: SmpIPK,
       tags: ["Sekolah", "Education", "Portal"],
+      link: "https://smpipkmuhammadiyahdelanggu.sch.id/",
     },
     {
       name: "Inventaris Dukcapil",
@@ -137,6 +145,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Landing Page produk cairan pembersih ramah lingkungan dengan fokus konversi (CTA beli sekarang, testimoni, dan highlight keunggulan produk).",
       image: SmartClean,
       tags: ["E-commerce", "Conversion"],
+      link: "https://www.lazcoalmandiri.co.id/",
     },
     {
       name: "GayaKita Store",
@@ -171,6 +180,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Sentraoto Website is a vehicle buy-and-sell platform that makes it easy for users to find and buy their dream vehicle. With a modern and user-friendly interface, Sentraoto provides various vehicle choices with complete and trusted information.",
       image: Sentraoto,
       tags: ["Vehicle Buy & Sell", "Vehicle", "Auction"],
+      link: "https://sentraoto.com",
     },
     {
       name: "Procurement Monitoring System",
@@ -187,6 +197,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "This company profile website was built to showcase the professionalism and capability of a digital company that helps with training and online courses.",
       image: DknDigital,
       tags: ["Training", "Digital", "Online Course"],
+      link: "https://dkn-digital.com/",
     },
     {
       name: "Nil Entertainment",
@@ -195,6 +206,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Photobooth & Videobooth services website from Bali. This website is designed to showcase the professionalism and quality of event organizer services offered by Nil Entertainment.",
       image: NilEntertainment,
       tags: ["Photobooth", "Videobooth", "Event"],
+      link: "https://nilphotoboothbali.com/",
     },
     {
       name: "Master Studio",
@@ -203,6 +215,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Photography services portfolio website of Master Studio located in Cikampek, Karawang, West Java. This website is designed to display the professionalism and quality of photography services offered by Master Studio.",
       image: MasterStudio,
       tags: ["Photography", "Photography Services", "Portfolio"],
+      link: "https://masterstudio-idn.com/",
     },
     {
       name: "Asih Angger",
@@ -211,6 +224,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Photography services portfolio website of Asih Angger. This website is built to increase the visibility and credibility of Asih Angger as a professional photographer.",
       image: AsihAngger,
       tags: ["Photography", "Photography Services", "Portfolio"],
+      link: "https://asihanggerfotografi.com/",
     },
     {
       name: "Nicofaart Woodwork",
@@ -219,6 +233,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "Landing page website for an authentic Jepara furniture manufacturer showing premium quality and elegant design. Built to strengthen Nicofaart Woodwork's branding as a provider of high-quality furniture crafted by professional Jepara woodworkers.",
       image: Nicofaart,
       tags: ["Furniture"],
+      link: "https://nicofaart.com/",
     },
     {
       name: "SMPI-PK Muhammadiyah Delanggu Klaten",
@@ -227,6 +242,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "School website developed to display information about academic activities, news, and student galleries. It makes it easier for the school to distribute articles or news about the school.",
       image: SmpIPK,
       tags: ["School", "Education", "Portal"],
+      link: "https://smpipkmuhammadiyahdelanggu.sch.id/",
     },
     {
       name: "Inventaris Dukcapil",
@@ -267,6 +283,7 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
         "This company profile website was built to showcase the professionalism and capability of a mining contractor company comprehensively. The design combines strong and modern industrial elements.",
       image: Lazcoal,
       tags: ["Contractor", "Mining", "Coal"],
+      link: "https://lazcoalmandiri.co.id/",
     },
     {
       name: "SmartClean",
@@ -300,5 +317,5 @@ export const PORTOFOLIO: Record<'id' | 'en', PortfolioItem[]> = {
       image: RasaNusa,
       tags: ["Nusantara Cuisine", "Culinary", "Restaurant"],
     },
-  ]
-}
+  ],
+};

@@ -7,6 +7,7 @@ import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/compone
 import Image from "next/image"
 import { PORTOFOLIO } from "@/lib/portofolio"
 import { useLanguage } from "@/components/language-provider"
+import { ExternalLink } from "lucide-react"
 
 const Portfolio = () => {
   const [selectedImage, setSelectedImage] = useState<{ src: any; alt: string; name?: string; description?: string } | null>(null)
@@ -30,7 +31,13 @@ const Portfolio = () => {
               <div className="bg-white dark:bg-gray-700 relative overflow-hidden">
                 <div 
                   className="relative cursor-pointer"
-                  onClick={() => setSelectedImage({ src: item.image, alt: item.name, name: item.name, description: item.description })}
+                  onClick={() => {
+                    if (item.link) {
+                      window.open(item.link, "_blank", "noopener,noreferrer")
+                    } else {
+                      setSelectedImage({ src: item.image, alt: item.name, name: item.name, description: item.description })
+                    }
+                  }}
                 >
                   <Image
                     src={item.image}
@@ -39,6 +46,13 @@ const Portfolio = () => {
                     height={300}
                     className="w-full h-72 group-hover:scale-110 transition-transform duration-300 object-contain object-center"
                   />
+                  {item.link && (
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">
+                      <div className="bg-white/90 dark:bg-gray-900/90 text-gray-900 dark:text-white p-3 rounded-full shadow-lg transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                        <ExternalLink className="w-5 h-5" />
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                   <div className="absolute bottom-4 left-4 right-4 pointer-events-auto">
@@ -54,7 +68,21 @@ const Portfolio = () => {
               </div>
 
               <CardHeader>
-                <CardTitle className="text-xl font-medium dark:text-white">{item.name}</CardTitle>
+                <CardTitle className="text-xl font-medium dark:text-white">
+                  {item.link ? (
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-orange-500 transition-colors flex items-center gap-1.5 w-fit"
+                    >
+                      {item.name}
+                      <ExternalLink className="w-4 h-4 inline" />
+                    </a>
+                  ) : (
+                    item.name
+                  )}
+                </CardTitle>
                 <Badge variant="default" className="w-fit bg-gradient-to-r from-orange-500 to-amber-500 dark:from-orange-600 dark:to-amber-600 text-white">
                   {item.type}
                 </Badge>
