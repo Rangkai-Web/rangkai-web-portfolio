@@ -6,6 +6,7 @@ export const TEMA_TYPE = [
   { value: "aqiqah" as const, label: "Aqiqah" },
   { value: "birthday" as const, label: "Birthday" },
   { value: "khitan" as const, label: "Khitan" },
+  { value: "walimatussafar" as const, label: "Walimatussafar" },
 ];
 
 export const TEMA = [
@@ -1070,5 +1071,29 @@ export const TEMA = [
     image: require("@/assets/tema/khitan/khitanan-04.webp"),
     type: "khitan",
     link: "https://invite.rangkaiweb.com/tema/khitanan-04/?to=Nama+Tamu",
+  },
+  {
+    name: "Walimatussafar-01",
+    image: require("@/assets/tema/khitan/walimatussafar-01.webp"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/walimatussafar-01/?to=Nama+Tamu",
+  },
+  {
+    name: "Walimatussafar-02",
+    image: require("@/assets/tema/khitan/walimatussafar-02.webp"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/walimatussafar-02/?to=Nama+Tamu",
+  },
+  {
+    name: "Walimatussafar-03",
+    image: require("@/assets/tema/khitan/walimatussafar-03.webp"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/walimatussafar-03/?to=Nama+Tamu",
+  },
+  {
+    name: "Walimatussafar-04",
+    image: require("@/assets/tema/khitan/walimatussafar-04.webp"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/walimatussafar-04/?to=Nama+Tamu",
   },
 ];
