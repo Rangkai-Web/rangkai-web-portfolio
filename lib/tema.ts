@@ -1,11 +1,12 @@
 // import D2C from "@/assets/tema/basic/1.webp"
 
 export const TEMA_TYPE = [
-  { value: 'basic' as const, label: 'Pernikahan Basic' },
-  { value: 'premium' as const, label: 'Pernikahan Premium' },
-  { value: 'aqiqah' as const, label: 'Aqiqah' },
-  { value: 'birthday' as const, label: 'Birthday' },
-]
+  { value: "basic" as const, label: "Pernikahan Basic" },
+  { value: "premium" as const, label: "Pernikahan Premium" },
+  { value: "aqiqah" as const, label: "Aqiqah" },
+  { value: "birthday" as const, label: "Birthday" },
+  { value: "khitan" as const, label: "Khitan" },
+];
 
 export const TEMA = [
   {
@@ -387,6 +388,18 @@ export const TEMA = [
     link: "https://invite.rangkaiweb.com/tema/floral-19/?to=Nama+Tamu",
   },
   {
+    name: "Brown Rustic",
+    image: require("@/assets/tema/basic/64.webp"),
+    type: "basic",
+    link: "https://invite.rangkaiweb.com/tema/brown-rustic/?to=Nama+Tamu",
+  },
+  {
+    name: "Hanami Sakura",
+    image: require("@/assets/tema/basic/65.webp"),
+    type: "basic",
+    link: "https://invite.rangkaiweb.com/tema/hanami-sakura/?to=Nama+Tamu",
+  },
+  {
     name: "Java Heritage",
     image: require("@/assets/tema/premium/1.webp"),
     type: "premium",
@@ -663,6 +676,66 @@ export const TEMA = [
     link: "https://invite.rangkaiweb.com/tema/dainty-sunset-in-singapore/?to=Nama+Tamu",
   },
   {
+    name: "Batak Karo Heritage",
+    image: require("@/assets/tema/premium/47.webp"),
+    type: "premium",
+    link: "https://invite.rangkaiweb.com/tema/batak-karo-heritage/?to=Nama+Tamu",
+  },
+  {
+    name: "Cascade Garden",
+    image: require("@/assets/tema/premium/48.webp"),
+    type: "premium",
+    link: "https://invite.rangkaiweb.com/tema/cascade-garden/?to=Nama+Tamu",
+  },
+  {
+    name: "Chateau Garden",
+    image: require("@/assets/tema/premium/49.webp"),
+    type: "premium",
+    link: "https://invite.rangkaiweb.com/tema/chateau-garden/?to=Nama+Tamu",
+  },
+  {
+    name: "Conservatory Garden",
+    image: require("@/assets/tema/premium/50.webp"),
+    type: "premium",
+    link: "https://invite.rangkaiweb.com/tema/conservatory-garden/?to=Nama+Tamu",
+  },
+  {
+    name: "Jambi Heritage",
+    image: require("@/assets/tema/premium/51.webp"),
+    type: "premium",
+    link: "https://invite.rangkaiweb.com/tema/jambi-heritage/?to=Nama+Tamu",
+  },
+  {
+    name: "Java Heritage 02",
+    image: require("@/assets/tema/premium/52.webp"),
+    type: "premium",
+    link: "https://invite.rangkaiweb.com/tema/java-heritage-02/?to=Nama+Tamu",
+  },
+  {
+    name: "Lampung Heritage",
+    image: require("@/assets/tema/premium/53.webp"),
+    type: "premium",
+    link: "https://invite.rangkaiweb.com/tema/lampung-heritage/?to=Nama+Tamu",
+  },
+  {
+    name: "Serenade Garden",
+    image: require("@/assets/tema/premium/54.webp"),
+    type: "premium",
+    link: "https://invite.rangkaiweb.com/tema/serenade-garden/?to=Nama+Tamu",
+  },
+  {
+    name: "Villa Garden",
+    image: require("@/assets/tema/premium/55.webp"),
+    type: "premium",
+    link: "https://invite.rangkaiweb.com/tema/villa-garden/?to=Nama+Tamu",
+  },
+  {
+    name: "Aceh Heritage",
+    image: require("@/assets/tema/premium/56.webp"),
+    type: "premium",
+    link: "https://invite.rangkaiweb.com/tema/aceh-heritage/?to=Nama+Tamu",
+  },
+  {
     name: "Aqiqah 09",
     image: require("@/assets/tema/aqiqah/1.webp"),
     type: "aqiqah",
@@ -907,5 +980,95 @@ export const TEMA = [
     image: require("@/assets/tema/birthday/26.jpg"),
     type: "birthday",
     link: "https://invite.rangkaiweb.com/tema/ultah-09/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitan-01",
+    image: require("@/assets/tema/khitan/Khitan-01.jpg"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitan-01/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitan-02",
+    image: require("@/assets/tema/khitan/Khitan-02.jpg"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitan-02/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitan-03",
+    image: require("@/assets/tema/khitan/Khitan-03.jpg"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitan-03/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitan-04",
+    image: require("@/assets/tema/khitan/Khitan-04.jpg"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitan-04/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitan-05",
+    image: require("@/assets/tema/khitan/Khitan-05.jpg"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitan-05/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitan-06",
+    image: require("@/assets/tema/khitan/Khitan-06.jpg"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitan-06/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitan-07",
+    image: require("@/assets/tema/khitan/Khitan-07.jpg"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitan-07/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitan-08",
+    image: require("@/assets/tema/khitan/Khitan-08.jpg"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitan-08/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitan-09",
+    image: require("@/assets/tema/khitan/khitan-09.webp"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitan-09/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitan-10",
+    image: require("@/assets/tema/khitan/khitan-10.webp"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitan-10/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitan-11",
+    image: require("@/assets/tema/khitan/khitan-11.webp"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitan-11/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitanan-01",
+    image: require("@/assets/tema/khitan/khitanan-01.webp"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitanan-01/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitanan-02",
+    image: require("@/assets/tema/khitan/khitanan-02.webp"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitanan-02/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitanan-03",
+    image: require("@/assets/tema/khitan/khitanan-03.webp"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitanan-03/?to=Nama+Tamu",
+  },
+  {
+    name: "Khitanan-04",
+    image: require("@/assets/tema/khitan/khitanan-04.webp"),
+    type: "khitan",
+    link: "https://invite.rangkaiweb.com/tema/khitanan-04/?to=Nama+Tamu",
   },
 ];
