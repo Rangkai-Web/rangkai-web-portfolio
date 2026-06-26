@@ -1075,25 +1075,25 @@ export const TEMA = [
   {
     name: "Walimatussafar-01",
     image: require("@/assets/tema/khitan/walimatussafar-01.webp"),
-    type: "khitan",
+    type: "walimatussafar",
     link: "https://invite.rangkaiweb.com/tema/walimatussafar-01/?to=Nama+Tamu",
   },
   {
     name: "Walimatussafar-02",
     image: require("@/assets/tema/khitan/walimatussafar-02.webp"),
-    type: "khitan",
+    type: "walimatussafar",
     link: "https://invite.rangkaiweb.com/tema/walimatussafar-02/?to=Nama+Tamu",
   },
   {
     name: "Walimatussafar-03",
     image: require("@/assets/tema/khitan/walimatussafar-03.webp"),
-    type: "khitan",
+    type: "walimatussafar",
     link: "https://invite.rangkaiweb.com/tema/walimatussafar-03/?to=Nama+Tamu",
   },
   {
     name: "Walimatussafar-04",
     image: require("@/assets/tema/khitan/walimatussafar-04.webp"),
-    type: "khitan",
+    type: "walimatussafar",
     link: "https://invite.rangkaiweb.com/tema/walimatussafar-04/?to=Nama+Tamu",
   },
 ];
