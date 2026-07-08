@@ -141,6 +141,15 @@ const Navigation = () => {
                 >
                   {t("nav.digitalInvitation")}
                 </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => {
+                    scrollToSection("logo-design")
+                    setIsServicesDropdownOpen(false)
+                  }}
+                  className="cursor-pointer hover:bg-orange-500 dark:hover:bg-orange-600 hover:text-white rounded-md"
+                >
+                  {t("nav.logoDesign")}
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 
@@ -216,6 +225,12 @@ const Navigation = () => {
                     className="block w-full text-left py-2 px-8 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-100 dark:hover:bg-orange-900/30 cursor-pointer transition-colors"
                   >
                     {t("nav.digitalInvitation")}
+                  </button>
+                  <button
+                    onClick={() => scrollToSection("logo-design")}
+                    className="block w-full text-left py-2 px-8 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-100 dark:hover:bg-orange-900/30 cursor-pointer transition-colors"
+                  >
+                    {t("nav.logoDesign")}
                   </button>
                 </div>
               )}

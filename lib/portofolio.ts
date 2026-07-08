@@ -137,6 +137,7 @@ export const PORTOFOLIO: Record<"id" | "en", PortfolioItem[]> = {
         "Website company profile ini dibangun untuk menampilkan profesionalitas dan kapabilitas perusahaan kontraktor pertambangan secara komprehensif. Desainnya menggabungkan elemen industri yang kuat dan modern.",
       image: Lazcoal,
       tags: ["Kontraktor", "Pertambangan", "Coal"],
+      link: "https://www.lazcoalmandiri.co.id/",
     },
     {
       name: "SmartClean",
@@ -145,7 +146,6 @@ export const PORTOFOLIO: Record<"id" | "en", PortfolioItem[]> = {
         "Landing Page produk cairan pembersih ramah lingkungan dengan fokus konversi (CTA beli sekarang, testimoni, dan highlight keunggulan produk).",
       image: SmartClean,
       tags: ["E-commerce", "Conversion"],
-      link: "https://www.lazcoalmandiri.co.id/",
     },
     {
       name: "GayaKita Store",

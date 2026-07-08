@@ -8,6 +8,7 @@ import AboutUs from "@/components/site/AboutUs"
 import { Benefits } from "@/components/site/Benefits"
 import Services from "@/components/site/Services"
 import DigitalInvitationServices from "@/components/site/DigitalInvitationServices"
+import LogoDesign from "@/components/site/logo-design"
 import Portfolio from "@/components/site/Portfolio"
 import Testimoni from "@/components/site/Testimoni"
 import { FAQ } from "@/components/site/Faq"
@@ -45,6 +46,9 @@ export default function RangkaiWebPortfolio() {
 
         {/* Digital Invitation Services Section */}
         <DigitalInvitationServices />
+
+        {/* Logo Design Section */}
+        <LogoDesign />
 
         {/* Portfolio Section */}
         <Portfolio />

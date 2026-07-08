@@ -10,6 +10,7 @@ export const translations = {
       whatsapp: "WhatsApp",
       webDev: "Website Development",
       digitalInvitation: "Undangan Digital",
+      logoDesign: "Jasa Desain Logo",
     },
     hero: {
       badge: "Solusi Tepat di Era Digital",
@@ -63,6 +64,19 @@ export const translations = {
           desc: "Bagikan undangan digital dengan cepat dan mudah lewat WhatsApp ke kontak yang Anda miliki. Undangan bisa langsung diterima dan dibaca oleh tamu undangan."
         }
       }
+    },
+    logoDesign: {
+      badge: "Jasa Desain Logo",
+      title: "Layanan Desain Logo Profesional",
+      subtitle: "Kami menyediakan layanan desain logo yang unik dan menarik untuk mewakili identitas merek Anda dengan sempurna",
+      cardTitle: "Jasa Desain Logo",
+      benefits: [
+        "Format file logo lengkap (JPEG, PNG, PDF, SVG, EPS)",
+        "Pengerjaan 24 jam",
+        "Jumlah revisi tidak dibatasi",
+        "Desain logo modern, bisa sesuai permintaan",
+      ],
+      btnText: "Pesan Sekarang",
     },
     portfolio: {
       badge: "Portofolio",
@@ -129,6 +143,7 @@ export const translations = {
       whatsapp: "WhatsApp",
       webDev: "Website Development",
       digitalInvitation: "Digital Invitation",
+      logoDesign: "Logo Design Service",
     },
     hero: {
       badge: "The Right Solution in the Digital Era",
@@ -182,6 +197,19 @@ export const translations = {
           desc: "Share digital invitations quickly and easily via WhatsApp to your contacts. The invitation can be immediately received and read by guests."
         }
       }
+    },
+    logoDesign: {
+      badge: "Logo Design Service",
+      title: "Professional Logo Design Services",
+      subtitle: "We create unique and memorable logos that represent your brand identity perfectly",
+      cardTitle: "Logo Design Service",
+      benefits: [
+        "Complete logo file formats (JPEG, PNG, PDF, SVG, EPS)",
+        "24-hour turnaround",
+        "Unlimited revisions",
+        "Modern logo design, customizable to your request",
+      ],
+      btnText: "Order Now",
     },
     portfolio: {
       badge: "Portfolio",
