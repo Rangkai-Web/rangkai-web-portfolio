@@ -68,7 +68,7 @@ export const translations = {
     logoDesign: {
       badge: "Jasa Desain Logo",
       title: "Layanan Desain Logo Profesional",
-      subtitle: "Kami menyediakan layanan desain logo yang unik dan menarik untuk mewakili identitas merek Anda dengan sempurna",
+      subtitle: "Kami menyediakan layanan desain logo yang unik dan menarik untuk mewakili identitas brand Anda dengan sempurna",
       cardTitle: "Jasa Desain Logo",
       benefits: [
         "Format file logo lengkap (JPEG, PNG, PDF, SVG, EPS)",
