@@ -1,25 +1,34 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { CheckCircle, Palette, MessageCircle, ExternalLink } from "lucide-react"
-import { whatsappHref } from "@/lib/site"
-import { useLanguage } from "@/components/language-provider"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  CheckCircle,
+  Palette,
+  MessageCircle,
+  ExternalLink,
+} from "lucide-react";
+import { whatsappHref } from "@/lib/site";
+import { useLanguage } from "@/components/language-provider";
 
 const LogoDesign = () => {
-  const { language, t } = useLanguage()
+  const { language, t } = useLanguage();
 
-  const benefits = t("logoDesign.benefits") as unknown as string[]
+  const benefits = t("logoDesign.benefits") as unknown as string[];
 
   const handleOrder = () => {
     const text =
       language === "id"
         ? "Halo, saya tertarik dengan layanan Jasa Desain Logo."
-        : "Hello, I'm interested in the Logo Design service."
-    window.open(whatsappHref(text), "_blank")
-  }
+        : "Hello, I'm interested in the Logo Design service.";
+    window.open(whatsappHref(text), "_blank");
+  };
 
   return (
-    <section id="logo-design" className="bg-[#F7F7F7] dark:bg-gray-900" aria-label={t("logoDesign.badge")}>
+    <section
+      id="logo-design"
+      className="bg-[#F7F7F7] dark:bg-gray-900"
+      aria-label={t("logoDesign.badge")}
+    >
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-12">
           <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">
@@ -33,7 +42,7 @@ const LogoDesign = () => {
           </p>
           <Button
             variant="outline"
-            className="border-orange-500 text-orange-600 hover:bg-orange-50 dark:border-orange-400 dark:text-orange-400 dark:hover:bg-orange-950/30"
+            className="border-orange-500 text-orange-600 hover:text-white hover:bg-orange-100 dark:border-orange-400 dark:text-orange-400 dark:hover:bg-orange-950/30"
             asChild
           >
             <a
@@ -63,7 +72,9 @@ const LogoDesign = () => {
                 {benefits.map((benefit, index) => (
                   <li key={index} className="flex items-start space-x-3">
                     <CheckCircle className="w-5 h-5 text-orange-500 dark:text-orange-400 mt-0.5 flex-shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">{benefit}</span>
+                    <span className="text-gray-700 dark:text-gray-300">
+                      {benefit}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -80,7 +91,7 @@ const LogoDesign = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default LogoDesign
+export default LogoDesign;
