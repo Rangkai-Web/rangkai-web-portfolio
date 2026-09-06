@@ -42,7 +42,7 @@ const LogoDesign = () => {
           </p>
           <Button
             variant="outline"
-            className="border-orange-500 text-orange-600 hover:text-white hover:bg-orange-100 dark:border-orange-400 dark:text-orange-400 dark:hover:bg-orange-950/30"
+            className="border-orange-500 text-orange-600 hover:text-white hover:bg-orange-500 dark:border-orange-400 dark:text-orange-400 dark:hover:bg-orange-950/30"
             asChild
           >
             <a

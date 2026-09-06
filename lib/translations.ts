@@ -228,7 +228,7 @@ export const translations = {
         "Modern logo design, customizable to your request",
       ],
       btnText: "Order Now",
-      portfolioBtnText: "Portofolio Logo",
+      portfolioBtnText: "Portfolio Logo",
     },
     portfolio: {
       badge: "Portfolio",
