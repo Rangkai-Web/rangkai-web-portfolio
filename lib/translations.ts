@@ -77,6 +77,7 @@ export const translations = {
         "Desain logo modern, bisa sesuai permintaan",
       ],
       btnText: "Pesan Sekarang",
+      portfolioBtnText: "Portfolio Logo",
     },
     portfolio: {
       badge: "Portofolio",
@@ -210,6 +211,7 @@ export const translations = {
         "Modern logo design, customizable to your request",
       ],
       btnText: "Order Now",
+      portfolioBtnText: "Portfolio Logo",
     },
     portfolio: {
       badge: "Portfolio",
