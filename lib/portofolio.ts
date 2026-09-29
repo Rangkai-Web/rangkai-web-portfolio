@@ -15,6 +15,8 @@ import DknDigital from "@/assets/portofolio/dkn.webp";
 import NilEntertainment from "@/assets/portofolio/nil.webp";
 import Promos from "@/assets/portofolio/promos.webp";
 import Sentraoto from "@/assets/portofolio/sentraoto.webp";
+import Bbystargo from "@/assets/portofolio/bbystargo.png";
+import Drplant from "@/assets/portofolio/drplant.webp";
 
 export type PortfolioItem = {
   name: string;
@@ -27,6 +29,24 @@ export type PortfolioItem = {
 
 export const PORTOFOLIO: Record<"id" | "en", PortfolioItem[]> = {
   id: [
+    {
+      name: "BbystarGo",
+      type: "Website Toko Online",
+      description:
+        "Website ecommerce jasa pembelian barang dari Indonesia, Korea, China, Jepang, dan negara lain sejak 2023. Ready Stock & Pre Order.",
+      image: Bbystargo,
+      tags: ["E-commerce", "Online Store", "Pre Order", "Ready Stock"],
+      link: "https://bbystargo.com",
+    },
+    {
+      name: "Dr. Plant Indonesia",
+      type: "Website Toko Online",
+      description:
+        "Website ecommerce Dr. Plant adalah brand skincare asal Tiongkok yang menghadirkan rangkaian perawatan untuk membantu menjaga kelembapan dan kesehatan kulit, mulai dari skincare harian, sheet mask, hingga perawatan facial profesional.",
+      image: Drplant,
+      tags: ["E-commerce", "Skincare", "Online Store"],
+      link: "https://drplant.co.id",
+    },
     {
       name: "Dealer Sentraoto",
       type: "Website Jual Beli Kendaraan",
