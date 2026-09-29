@@ -16,7 +16,7 @@ import NilEntertainment from "@/assets/portofolio/nil.webp";
 import Promos from "@/assets/portofolio/promos.webp";
 import Sentraoto from "@/assets/portofolio/sentraoto.webp";
 import Bbystargo from "@/assets/portofolio/bbystargo.png";
-import Drplant from "@/assets/portofolio/drplant.webp";
+import Drplant from "@/assets/portofolio/drplant.png";
 
 export type PortfolioItem = {
   name: string;
