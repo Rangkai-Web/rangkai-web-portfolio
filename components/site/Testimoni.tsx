@@ -42,7 +42,7 @@ const Testimoni = () => {
   }, [api, currentTestimonials.length])
 
   return (
-    <section id="testimonials" className="relative" aria-label={t('testimonials.badge')}>
+    <section id="testimonials" className="scroll-mt-16 relative" aria-label={t('testimonials.badge')}>
       <div className="absolute inset-0">
         <Image src={Teamwork} alt="Teamwork" className="h-full w-full object-cover" />
         <div className="absolute inset-0 bg-black/70" />

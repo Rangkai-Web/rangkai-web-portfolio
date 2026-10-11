@@ -10,6 +10,9 @@ const Footer = () => {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
+      window.history.pushState(null, "", `#${sectionId}`)
+    } else {
+      window.location.href = `/#${sectionId}`
     }
   }
 
@@ -41,12 +44,12 @@ const Footer = () => {
           <div>
             <h4 className="font-medium text-gray-100 dark:text-gray-200 mb-4">{t('footer.company')}</h4>
             <ul className="space-y-2 text-gray-400 dark:text-gray-500">
-              <li><a href="#home" className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors" onClick={() => scrollToSection("home")}>{t('nav.home')}</a></li>
-              <li><a href="#about-us" className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors" onClick={() => scrollToSection("about-us")}>{t('nav.aboutUs')}</a></li>
-              <li><a href="#services" className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors" onClick={() => scrollToSection("services")}>{t('nav.services')}</a></li>
-              <li><a href="#portfolio" className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors" onClick={() => scrollToSection("portfolio")}>{t('nav.portfolio')}</a></li>
-              <li><a href="#testimonials" className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors" onClick={() => scrollToSection("testimonials")}>{t('nav.testimonials')}</a></li>
-              <li><a href="#contact" className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors" onClick={() => scrollToSection("contact")}>{t('nav.contact')}</a></li>
+              <li><a href="/#home" className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors" onClick={(e) => { e.preventDefault(); scrollToSection("home"); }}>{t('nav.home')}</a></li>
+              <li><a href="/#about-us" className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors" onClick={(e) => { e.preventDefault(); scrollToSection("about-us"); }}>{t('nav.aboutUs')}</a></li>
+              <li><a href="/#services" className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors" onClick={(e) => { e.preventDefault(); scrollToSection("services"); }}>{t('nav.services')}</a></li>
+              <li><a href="/#portfolio" className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors" onClick={(e) => { e.preventDefault(); scrollToSection("portfolio"); }}>{t('nav.portfolio')}</a></li>
+              <li><a href="/#testimonials" className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors" onClick={(e) => { e.preventDefault(); scrollToSection("testimonials"); }}>{t('nav.testimonials')}</a></li>
+              <li><a href="/#contact" className="hover:text-orange-500 dark:hover:text-orange-400 transition-colors" onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}>{t('nav.contact')}</a></li>
             </ul>
           </div>
 

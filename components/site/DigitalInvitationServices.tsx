@@ -30,7 +30,7 @@ const DigitalInvitationServices = () => {
   ]
 
   return (
-    <section id="digital-invitation" className="bg-white dark:bg-gray-900" aria-label={t("digitalInvitation.badge")}>
+    <section id="digital-invitation" className="scroll-mt-16 bg-white dark:bg-gray-900" aria-label={t("digitalInvitation.badge")}>
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-16">
           <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">{t("digitalInvitation.badge")}</Badge>

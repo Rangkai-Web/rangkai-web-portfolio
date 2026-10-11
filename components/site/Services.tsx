@@ -43,7 +43,7 @@ const Services = () => {
   }, [api])
 
   return (
-    <section id="services" className="bg-[#F7F7F7] dark:bg-gray-900" aria-label={t('services.badge')}>
+    <section id="services" className="scroll-mt-16 bg-[#F7F7F7] dark:bg-gray-900" aria-label={t('services.badge')}>
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-8 md:mb-0">
           <Badge className="text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">{t('services.badge')}</Badge>

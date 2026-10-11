@@ -8,7 +8,7 @@ const AboutUs = () => {
   const { t } = useLanguage()
 
   return (
-    <section id="about-us" className="bg-white dark:bg-gray-900 container mx-auto max-w-7xl px-8 md:px-24 py-32 md:mt-20" aria-label={t('nav.aboutUs')}>
+    <section id="about-us" className="scroll-mt-16 bg-white dark:bg-gray-900 container mx-auto max-w-7xl px-8 md:px-24 py-32 md:mt-20" aria-label={t('nav.aboutUs')}>
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-20 items-center justify-center">
           <div className="text-left">

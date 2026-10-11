@@ -69,11 +69,61 @@ const Navigation = () => {
     return () => mediaQuery.removeEventListener('change', handleChange)
   }, [mounted, theme])
 
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.location.hash) {
+      const hash = decodeURIComponent(window.location.hash.replace("#", ""))
+      setActiveSection(hash)
+      const element = document.getElementById(hash)
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" })
+        }, 150)
+      }
+    }
+  }, [mounted])
+
+  // Scroll spy to update activeSection when user scrolls manually
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = [
+        "home",
+        "about-us",
+        "services",
+        "digital-invitation",
+        "logo-design",
+        "portfolio",
+        "testimonials",
+        "contact"
+      ]
+      const scrollPosition = window.scrollY + 120
+
+      for (const section of sections) {
+        const element = document.getElementById(section)
+        if (element) {
+          const offsetTop = element.offsetTop
+          const offsetHeight = element.offsetHeight
+
+          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+            setActiveSection(section)
+            break
+          }
+        }
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
+      window.history.pushState(null, "", `#${sectionId}`)
+    } else {
+      window.location.href = `/#${sectionId}`
     }
+    setActiveSection(sectionId)
     setIsMenuOpen(false)
     setIsMobileServicesOpen(false)
   }
@@ -94,9 +144,13 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center">
             {["home", "about-us"].map((item) => (
-              <button
+              <a
                 key={item}
-                onClick={() => scrollToSection(item)}
+                href={`/#${item}`}
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(item)
+                }}
                 className={`capitalize transition-colors cursor-pointer py-1 px-3 ${
                   activeSection === item 
                     ? "text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 rounded-full" 
@@ -106,14 +160,14 @@ const Navigation = () => {
                 {item === "home"
                   ? t("nav.home")
                   : t("nav.aboutUs")}
-              </button>
+              </a>
             ))}
             
             <DropdownMenu open={isServicesDropdownOpen} onOpenChange={setIsServicesDropdownOpen}>
               <DropdownMenuTrigger asChild>
                 <button
                   className={`capitalize transition-colors cursor-pointer py-1 px-3 flex items-center gap-1 outline-none ${
-                    activeSection === "services" || activeSection === "digital-invitation"
+                    activeSection === "services" || activeSection === "digital-invitation" || activeSection === "logo-design"
                       ? "text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 rounded-full"
                       : "text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400"
                   }`}
@@ -154,9 +208,13 @@ const Navigation = () => {
             </DropdownMenu>
 
             {["portfolio", "testimonials", "contact"].map((item) => (
-              <button
+              <a
                 key={item}
-                onClick={() => scrollToSection(item)}
+                href={`/#${item}`}
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(item)
+                }}
                 className={`capitalize transition-colors cursor-pointer py-1 px-3 ${
                   activeSection === item 
                     ? "text-orange-600 dark:text-orange-400 font-medium bg-orange-100 dark:bg-orange-900/30 rounded-full" 
@@ -168,7 +226,7 @@ const Navigation = () => {
                   : item === "testimonials"
                     ? t("nav.testimonials")
                     : t("nav.contact")}
-              </button>
+              </a>
             ))}
           </div>
 
@@ -189,15 +247,19 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-gray-200 dark:border-gray-800">
             {["home", "about-us"].map((item) => (
-              <button
+              <a
                 key={item}
-                onClick={() => scrollToSection(item)}
+                href={`/#${item}`}
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(item)
+                }}
                 className="block w-full text-left py-2 px-4 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-900/20 capitalize cursor-pointer transition-colors"
               >
                 {item === "home"
                   ? t("nav.home")
                   : t("nav.aboutUs")}
-              </button>
+              </a>
             ))}
             
             <div className="border-t border-gray-200 dark:border-gray-800">
@@ -214,32 +276,48 @@ const Navigation = () => {
               </button>
               {isMobileServicesOpen && (
                 <div className="bg-orange-50/50 dark:bg-orange-900/10">
-                  <button
-                    onClick={() => scrollToSection("services")}
+                  <a
+                    href="/#services"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      scrollToSection("services")
+                    }}
                     className="block w-full text-left py-2 px-8 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-100 dark:hover:bg-orange-900/30 cursor-pointer transition-colors"
                   >
                     {t("nav.webDev")}
-                  </button>
-                  <button
-                    onClick={() => scrollToSection("digital-invitation")}
+                  </a>
+                  <a
+                    href="/#digital-invitation"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      scrollToSection("digital-invitation")
+                    }}
                     className="block w-full text-left py-2 px-8 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-100 dark:hover:bg-orange-900/30 cursor-pointer transition-colors"
                   >
                     {t("nav.digitalInvitation")}
-                  </button>
-                  <button
-                    onClick={() => scrollToSection("logo-design")}
+                  </a>
+                  <a
+                    href="/#logo-design"
+                    onClick={(e) => {
+                      e.preventDefault()
+                      scrollToSection("logo-design")
+                    }}
                     className="block w-full text-left py-2 px-8 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-100 dark:hover:bg-orange-900/30 cursor-pointer transition-colors"
                   >
                     {t("nav.logoDesign")}
-                  </button>
+                  </a>
                 </div>
               )}
             </div>
 
             {["portfolio", "testimonials", "contact"].map((item) => (
-              <button
+              <a
                 key={item}
-                onClick={() => scrollToSection(item)}
+                href={`/#${item}`}
+                onClick={(e) => {
+                  e.preventDefault()
+                  scrollToSection(item)
+                }}
                 className="block w-full text-left py-2 px-4 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-900/20 capitalize cursor-pointer transition-colors"
               >
                 {item === "portfolio"
@@ -247,7 +325,7 @@ const Navigation = () => {
                   : item === "testimonials"
                     ? t("nav.testimonials")
                     : t("nav.contact")}
-              </button>
+              </a>
             ))}
 
             {mounted && (

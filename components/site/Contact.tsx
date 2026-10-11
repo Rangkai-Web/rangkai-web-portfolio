@@ -48,7 +48,7 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="relative bg-gradient-to-r from-orange-500 to-amber-500 text-white" aria-label={t('contact.badge')}>
+    <section id="contact" className="scroll-mt-16 relative bg-gradient-to-r from-orange-500 to-amber-500 text-white" aria-label={t('contact.badge')}>
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
         <div className="text-center mb-8">
           <Badge className="text-orange-600 dark:text-white font-medium bg-orange-100 dark:bg-orange-900/30 mb-4 text-base">{t('contact.badge')}</Badge>

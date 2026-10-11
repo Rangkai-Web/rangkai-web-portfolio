@@ -26,7 +26,7 @@ const LogoDesign = () => {
   return (
     <section
       id="logo-design"
-      className="bg-[#F7F7F7] dark:bg-gray-900"
+      className="scroll-mt-16 bg-[#F7F7F7] dark:bg-gray-900"
       aria-label={t("logoDesign.badge")}
     >
       <div className="container mx-auto max-w-7xl px-8 md:px-24 py-32">
